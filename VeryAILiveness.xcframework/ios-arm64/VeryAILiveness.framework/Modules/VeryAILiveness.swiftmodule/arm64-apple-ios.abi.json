@@ -7695,7 +7695,14 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LocalizationManager.swift",
       "kind": "StringLiteral",
-      "offset": 237,
+      "offset": 688,
+      "length": 27,
+      "value": "\"com.very.sdk.localization\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LocalizationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 759,
       "length": 4,
       "value": "\"en\""
     },
