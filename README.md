@@ -18,7 +18,7 @@ pod 'VeryAILiveness/Bundled'   # ships ~8 MB packed_data.bin in the framework
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.42")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.43")
 ```
 
 Two product names are exposed:
