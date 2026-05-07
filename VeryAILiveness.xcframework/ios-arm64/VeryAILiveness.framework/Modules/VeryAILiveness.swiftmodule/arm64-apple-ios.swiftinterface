@@ -11,7 +11,6 @@ import Foundation
 import MachO
 import Network
 import ObjectiveC
-import Security
 import Swift
 import UIKit
 import _Concurrency
@@ -157,18 +156,18 @@ public struct CameraAdjustmentState {
   @_Concurrency.MainActor(unsafe) @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
 }
 @_inheritsConvenienceInitializers @objc public class VeryAILiveness : ObjectiveC.NSObject {
-  @objc public static func check(from viewController: UIKit.UIViewController, config: VeryLivenessConfig = VeryLivenessConfig(), presentationStyle: VeryPresentationStyle = .modal, completion: @escaping (VeryResult) -> Swift.Void)
+  @objc public static func check(from viewController: UIKit.UIViewController, config: VeryLivenessConfig, presentationStyle: VeryPresentationStyle = .modal, completion: @escaping (VeryResult) -> Swift.Void)
   @objc public static func isSupported() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class VeryLivenessConfig : ObjectiveC.NSObject {
+@objc public class VeryLivenessConfig : ObjectiveC.NSObject {
+  @objc public var sdkKey: Swift.String
   @objc public var themeMode: Swift.String
   @objc public var language: Swift.String?
   @objc public var livenessMode: VeryLivenessMode
   @objc public var debugLogging: Swift.Bool
-  @objc override dynamic public init()
-  @objc public init(themeMode: Swift.String = "dark", language: Swift.String? = nil, livenessMode: VeryLivenessMode = .touch, debugLogging: Swift.Bool = false)
+  @objc public init(sdkKey: Swift.String, themeMode: Swift.String = "dark", language: Swift.String? = nil, livenessMode: VeryLivenessMode = .touch, debugLogging: Swift.Bool = false)
   @objc deinit
 }
 extension VeryPresentationStyle : Swift.Equatable {}

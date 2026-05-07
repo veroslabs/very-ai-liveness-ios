@@ -414,20 +414,27 @@ typedef SWIFT_ENUM(NSInteger, VeryErrorType, open) {
 };
 
 
-/// Liveness-check configuration. Slim subset of <code>VeryConfig</code> — <code>sdkKey</code> and
-/// <code>userId</code> are not exposed because the liveness flow has no API session and
-/// doesn’t bind a result to a user identity.
+/// Liveness-check configuration.
+/// Slim subset of <code>VeryConfig</code> — <code>userId</code> is not exposed because the
+/// liveness flow doesn’t bind a result to a user identity. <code>sdkKey</code> IS
+/// required (was deferred during the initial dual-artifact split, added
+/// once the backend <code>liveness-sessions</code> endpoints went live — see
+/// https://github.com/veroslabs/veros-api/pull/34).
 SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 @interface VeryLivenessConfig : NSObject
+/// SDK API key issued by Very. Authenticates the create-session +
+/// submit-result calls to the liveness backend.
+@property (nonatomic, copy) NSString * _Nonnull sdkKey;
 @property (nonatomic, copy) NSString * _Nonnull themeMode;
 @property (nonatomic, copy) NSString * _Nullable language;
 @property (nonatomic) enum VeryLivenessMode livenessMode;
 /// Enable verbose SDK logging. Off by default — turning on prints scan
-/// loop diagnostics to the host app’s console. Errors always log
-/// regardless of this flag.
+/// loop diagnostics + API request/response bodies to the host app’s
+/// console. Errors always log regardless of this flag.
 @property (nonatomic) BOOL debugLogging;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithThemeMode:(NSString * _Nonnull)themeMode language:(NSString * _Nullable)language livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey themeMode:(NSString * _Nonnull)themeMode language:(NSString * _Nullable)language livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// Liveness detection mode for palm scanning

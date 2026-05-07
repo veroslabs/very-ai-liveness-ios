@@ -13,7 +13,7 @@ pod 'VeryAILiveness/Bundled'      # ships ~8 MB packed_data.bin in the SDK
 ## Install (SPM)
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.40")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.41")
 ```
 
 Use `VeryAILivenessBundled` for bundled mode.

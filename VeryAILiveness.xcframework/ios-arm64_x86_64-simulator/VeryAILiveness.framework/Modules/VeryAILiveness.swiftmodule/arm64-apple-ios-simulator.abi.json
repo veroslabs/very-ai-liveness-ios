@@ -4985,13 +4985,6 @@
       },
       {
         "kind": "Import",
-        "name": "Security",
-        "printedName": "Security",
-        "declKind": "Import",
-        "moduleName": "VeryAILiveness"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5127,7 +5120,6 @@
                 "kind": "TypeNominal",
                 "name": "VeryLivenessConfig",
                 "printedName": "VeryAILiveness.VeryLivenessConfig",
-                "hasDefaultArg": true,
                 "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig"
               },
               {
@@ -5300,6 +5292,99 @@
         "name": "VeryLivenessConfig",
         "printedName": "VeryLivenessConfig",
         "children": [
+          {
+            "kind": "Var",
+            "name": "sdkKey",
+            "printedName": "sdkKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig(py)sdkKey",
+            "mangledName": "$s14VeryAILiveness0A14LivenessConfigC6sdkKeySSvp",
+            "moduleName": "VeryAILiveness",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig(im)sdkKey",
+                "mangledName": "$s14VeryAILiveness0A14LivenessConfigC6sdkKeySSvg",
+                "moduleName": "VeryAILiveness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig(im)setSdkKey:",
+                "mangledName": "$s14VeryAILiveness0A14LivenessConfigC6sdkKeySSvs",
+                "moduleName": "VeryAILiveness",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14VeryAILiveness0A14LivenessConfigC6sdkKeySSvM",
+                "mangledName": "$s14VeryAILiveness0A14LivenessConfigC6sdkKeySSvM",
+                "moduleName": "VeryAILiveness",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "themeMode",
@@ -5698,39 +5783,19 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init()",
+            "printedName": "init(sdkKey:themeMode:language:livenessMode:debugLogging:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "VeryLivenessConfig",
                 "printedName": "VeryAILiveness.VeryLivenessConfig",
                 "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig(im)init",
-            "mangledName": "$s14VeryAILiveness0A14LivenessConfigCACycfc",
-            "moduleName": "VeryAILiveness",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(themeMode:language:livenessMode:debugLogging:)",
-            "children": [
+              },
               {
                 "kind": "TypeNominal",
-                "name": "VeryLivenessConfig",
-                "printedName": "VeryAILiveness.VeryLivenessConfig",
-                "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -5770,13 +5835,39 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig(im)initWithThemeMode:language:livenessMode:debugLogging:",
-            "mangledName": "$s14VeryAILiveness0A14LivenessConfigC9themeMode8language08livenessF012debugLoggingACSS_SSSgAA0acF0OSbtcfc",
+            "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig(im)initWithSdkKey:themeMode:language:livenessMode:debugLogging:",
+            "mangledName": "$s14VeryAILiveness0A14LivenessConfigC6sdkKey9themeMode8language08livenessH012debugLoggingACSS_S2SSgAA0acH0OSbtcfc",
             "moduleName": "VeryAILiveness",
-            "objc_name": "initWithThemeMode:language:livenessMode:debugLogging:",
+            "objc_name": "initWithSdkKey:themeMode:language:livenessMode:debugLogging:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VeryLivenessConfig",
+                "printedName": "VeryAILiveness.VeryLivenessConfig",
+                "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@VeryAILiveness@objc(cs)VeryLivenessConfig(im)init",
+            "mangledName": "$s14VeryAILiveness0A14LivenessConfigCACycfc",
+            "moduleName": "VeryAILiveness",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
             ],
             "init_kind": "Designated"
           }
@@ -5791,7 +5882,6 @@
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -5846,6 +5936,13 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VeryAILiveness"
       },
       {
         "kind": "Import",
@@ -7646,7 +7743,7 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/ScanViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 43908,
+      "offset": 44462,
       "length": 5,
       "value": "false"
     },
@@ -7659,29 +7756,29 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1722,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1069,
+      "offset": 2493,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1558,
+      "offset": 2982,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1638,
-      "length": 6,
-      "value": "\"dark\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 662,
+      "offset": 711,
       "length": 27,
       "value": "\"VeryAILiveness.LivenessCheckViewController\""
     },
@@ -9445,14 +9542,14 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/SDKExitHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 860,
+      "offset": 1363,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/SDKExitHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 5733,
+      "offset": 6700,
       "length": 5,
       "value": "false"
     },
@@ -9571,37 +9668,79 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VerySDKCore.swift",
       "kind": "StringLiteral",
-      "offset": 1126,
+      "offset": 1218,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VerySDKCore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1288,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VerySDKCore.swift",
+      "kind": "StringLiteral",
+      "offset": 1301,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VerySDKCore.swift",
+      "kind": "StringLiteral",
+      "offset": 1798,
       "length": 28,
       "value": "\"com.very.sdk.callbackQueue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VerySDKCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 1585,
+      "offset": 2257,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VerySDKCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 2225,
+      "offset": 2897,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryLivenessConfig.swift",
       "kind": "StringLiteral",
-      "offset": 895,
+      "offset": 1087,
       "length": 6,
       "value": "\"dark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryLivenessConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1014,
+      "offset": 1206,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryLivenessConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 416,
+      "length": 18,
+      "value": "\"VeryAILiveness.VeryLivenessConfig\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/LivenessApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1222,
+      "length": 29,
+      "value": "\"https:\/\/api.very.org\/v1\/sdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/LivenessApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1300,
+      "length": 2,
+      "value": "15"
     }
   ]
 }
