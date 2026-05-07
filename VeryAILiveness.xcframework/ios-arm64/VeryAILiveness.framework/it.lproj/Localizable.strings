@@ -1,0 +1,164 @@
+/* Very Mobile SDK Localization - Italian */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Sposta la mano a sinistra";
+"status.moveHandRight" = "Sposta la mano a destra";
+"status.moveHandUp" = "Sposta la mano verso l'alto";
+"status.moveHandDown" = "Sposta la mano verso il basso";
+"status.moveHandCloser" = "Avvicina la mano";
+"status.moveHandFarther" = "Allontana un po' la mano";
+"status.rotateHandUpward" = "Inclina la mano verso di te";
+"status.rotateHandParallel" = "Tieni la mano piatta";
+"status.flipHandOver" = "Posiziona il palmo davanti alla fotocamera";
+"status.spreadFingers" = "Apri bene la mano";
+"status.straightenFingers" = "Raddrizza le dita";
+"status.spreadThumb" = "Sposta il pollice di lato";
+"status.straightenThumb" = "Raddrizza il pollice";
+"status.brightenHand" = "Cerca un punto più luminoso";
+"status.darkenHand" = "Evita la luce diretta";
+"status.focusHand" = "Resta fermo un momento";
+"status.keepStill" = "Resta fermo";
+"status.showGesture" = "Mostra il gesto";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Scansiona il palmo destro";
+"scan.scanYourLeftPalm" = "Scansiona il palmo sinistro";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "Prima mano completata";
+"switchPalm.proceedToSwitchHand" = "Ora scansiona l'altra mano.";
+
+/* Auth View Controller */
+"auth.cancel" = "Annulla";
+"auth.termsText" = "Continuando, accetti i nostri Termini di servizio e l'Informativa sulla privacy.";
+"auth.termsOfService" = "Termini di servizio";
+"auth.privacyPolicy" = "Informativa sulla privacy";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Configura la scansione del palmo";
+"workthrough.subtitle" = "Scansiona quattro volte per configurare. Poi scansiona una volta.";
+"workthrough.getStarted" = "Inizia";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Non siamo riusciti a verificare il tuo palmo. Per favore riprova.";
+"error.5006" = "Qualcosa è andato storto. Per favore riprova.";
+"error.5007" = "La sessione è scaduta. Per favore riprova.";
+"error.5008" = "Qualcosa è andato storto. Per favore contatta l'assistenza.";
+"error.5009" = "Qualcosa è andato storto. Per favore contatta l'assistenza.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Qualcosa è andato storto. Per favore riprova.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "Per scansionare il palmo, consenti l'accesso alla fotocamera nelle impostazioni del telefono.";
+"error.6102" = "Non siamo riusciti a completare la scansione. Per favore riprova.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Il tuo palmo è stato verificato.";
+"scan.successRegistered" = "La biometria del palmo è stata configurata.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "caricamento…";
+"common.retrying" = "Nuovo tentativo…";
+"common.success" = "Successo";
+"common.error" = "Errore";
+"common.done" = "Fatto";
+"common.tryAgain" = "Riprova";
+"common.cancel" = "Annulla";
+"common.continue" = "Continua";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Scansiona il palmo sinistro";
+"scan.positionLeftHandAgain" = "Scansiona il palmo sinistro di nuovo";
+"scan.positionRightHand" = "Scansiona il palmo destro";
+"scan.positionRightHandAgain" = "Quasi fatto — ultima scansione";
+"scan.defaultStatus" = "Scansiona la tua mano";
+"scan.defaultStatusEnroll" = "Scansiona la tua prima mano";
+"scan.showGesture" = "Mostra il gesto";
+"scan.connectDots" = "Collega i punti";
+"scan.almostDone" = "Quasi fatto";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Registrazione palmi";
+"scan.verifyingPalm" = "Verifica del palmo";
+"scan.successTitleVerified" = "Verificato";
+"scan.successTitleRegistered" = "Palmi registrati";
+"scan.successVerified" = "Il tuo palmo è stato verificato.";
+"scan.successRegistered" = "Ora puoi verificare usando i tuoi palmi.";
+
+/* Email Verification */
+"email.continueWithEmail" = "Inserisci la tua email";
+"email.verifyYourEmail" = "Verifica la tua email";
+"email.sentCodeTo" = "Codice inviato a";
+"email.resendCode" = "Rinvia codice";
+"email.resendInSeconds" = "Rinvia tra %@ s";
+"email.invalidCode" = "Codice di verifica non valido. Riprova.";
+"email.placeholder" = "Indirizzo email";
+"consent.tip3" = "La scansione del palmo viene utilizzata solo per verificare la tua identità—elimina i tuoi dati in qualsiasi momento";
+"switchPalm.scanOtherHand" = "Scansiona l'altra mano";
+"error.palmLinkedToEmail" = "Il tuo palmo è collegato a %@";
+"scan.errorTitle" = "Non siamo riusciti a verificare il tuo palmo";
+"common.tryAgainMessage" = "Per favore riprova.";
+"auth.errorTitle" = "Non siamo riusciti a procedere al passaggio successivo.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Account limitato";
+"accountRestricted.message" = "Abbiamo rilevato attività che potrebbero violare i nostri termini di servizio. Il tuo account è stato limitato mentre lo esaminiamo.\n\nSe ritieni che si tratti di un errore, contatta il nostro team di supporto.";
+"accountRestricted.getInTouch" = "Contattaci";
+"accountRestricted.cancel" = "Annulla";
+"consent.tip1" = "Crea un account scansionando entrambi i palmi. Riverifica con una sola scansione";
+"error.6001" = "Impossibile connettersi. Controlla la tua connessione Internet e riprova.";
+"error.6002" = "La risposta ha impiegato troppo tempo. Controlla la tua connessione e riprova.";
+"error.6003" = "Impossibile risolvere i nostri server. Controlla la tua rete o prova una diversa.";
+"error.6004" = "Errore di rete. Controlla la tua connessione e riprova.";
+"error.6005" = "Connessione sicura non riuscita. Controlla data e ora del dispositivo.";
+"error.6006" = "I nostri server hanno problemi. Riprova tra poco.";
+"error.6999" = "Si è verificato un errore. Riprova.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";

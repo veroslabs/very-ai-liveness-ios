@@ -1,0 +1,164 @@
+/* Very Mobile SDK Localization - Swedish */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Flytta handen åt vänster";
+"status.moveHandRight" = "Flytta handen åt höger";
+"status.moveHandUp" = "Flytta handen uppåt";
+"status.moveHandDown" = "Flytta handen nedåt";
+"status.moveHandCloser" = "För handen närmare";
+"status.moveHandFarther" = "Flytta handen lite tillbaka";
+"status.rotateHandUpward" = "Luta handen mot dig";
+"status.rotateHandParallel" = "Håll handen platt";
+"status.flipHandOver" = "Placera handflatan framför kameran";
+"status.spreadFingers" = "Öppna handen ordentligt";
+"status.straightenFingers" = "Sträck fingrarna";
+"status.spreadThumb" = "Flytta tummen åt sidan";
+"status.straightenThumb" = "Sträck tummen";
+"status.brightenHand" = "Hitta en ljusare plats";
+"status.darkenHand" = "Undvik direkt ljus";
+"status.focusHand" = "Håll stilla en stund";
+"status.keepStill" = "Håll stilla";
+"status.showGesture" = "Visa gest";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Skanna din högra handflata";
+"scan.scanYourLeftPalm" = "Skanna din vänstra handflata";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "Första handen slutförd";
+"switchPalm.proceedToSwitchHand" = "Skanna nu din andra hand.";
+
+/* Auth View Controller */
+"auth.cancel" = "Avbryt";
+"auth.termsText" = "Genom att fortsätta godkänner du våra Användarvillkor och Integritetspolicy.";
+"auth.termsOfService" = "Användarvillkor";
+"auth.privacyPolicy" = "Integritetspolicy";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Ställ in din handflatesscanning";
+"workthrough.subtitle" = "Skanna fyra gånger för att ställa in. Sedan skanna en gång.";
+"workthrough.getStarted" = "Kom igång";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Vi kunde inte verifiera din handflata. Försök igen.";
+"error.5006" = "Något gick fel. Försök igen.";
+"error.5007" = "Din session har löpt ut. Försök igen.";
+"error.5008" = "Något gick fel. Kontakta supporten.";
+"error.5009" = "Något gick fel. Kontakta supporten.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Något gick fel. Försök igen.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "För att skanna din handflata, tillåt kameraåtkomst i telefonens inställningar.";
+"error.6102" = "Vi kunde inte slutföra skanningen. Försök igen.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Din handflata har verifierats.";
+"scan.successRegistered" = "Handflatebiometri har nu ställts in.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "laddar…";
+"common.retrying" = "Försöker igen…";
+"common.success" = "Lyckades";
+"common.error" = "Fel";
+"common.done" = "Klar";
+"common.tryAgain" = "Försök igen";
+"common.cancel" = "Avbryt";
+"common.continue" = "Fortsätt";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Skanna vänster handflata";
+"scan.positionLeftHandAgain" = "Skanna vänster handflata igen";
+"scan.positionRightHand" = "Skanna höger handflata";
+"scan.positionRightHandAgain" = "Nästan klart — sista skanningen";
+"scan.defaultStatus" = "Skanna din hand";
+"scan.defaultStatusEnroll" = "Skanna din första hand";
+"scan.showGesture" = "Visa gest";
+"scan.connectDots" = "Koppla ihop punkterna";
+"scan.almostDone" = "Nästan klart";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Registrerar handflator";
+"scan.verifyingPalm" = "Verifierar handflata";
+"scan.successTitleVerified" = "Verifierad";
+"scan.successTitleRegistered" = "Handflator registrerade";
+"scan.successVerified" = "Din handflata har verifierats.";
+"scan.successRegistered" = "Du kan nu verifiera med dina handflator.";
+
+/* Email Verification */
+"email.continueWithEmail" = "Ange din e-post";
+"email.verifyYourEmail" = "Verifiera din e-post";
+"email.sentCodeTo" = "Kod skickad till";
+"email.resendCode" = "Skicka kod igen";
+"email.resendInSeconds" = "Skicka igen om %@ s";
+"email.invalidCode" = "Ogiltig verifieringskod. Försök igen.";
+"email.placeholder" = "E-postadress";
+"consent.tip3" = "Din handflatteskanningen används bara för att verifiera din identitet—radera dina uppgifter när som helst";
+"switchPalm.scanOtherHand" = "Skanna andra hand";
+"error.palmLinkedToEmail" = "Din handflata är länkad till %@";
+"scan.errorTitle" = "Vi kunde inte verifiera din handflata";
+"common.tryAgainMessage" = "Försök igen.";
+"auth.errorTitle" = "Vi kunde inte gå vidare till nästa steg.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Kontot är begränsat";
+"accountRestricted.message" = "Vi har upptäckt aktivitet som kan bryta mot våra användarvillkor. Ditt konto har begränsats medan vi granskar det.\n\nOm du tror att detta är ett fel, kontakta vårt supportteam.";
+"accountRestricted.getInTouch" = "Kontakta oss";
+"accountRestricted.cancel" = "Avbryt";
+"consent.tip1" = "Skapa konto genom att skanna båda handflatorna. Verifiera igen med bara en skanning";
+"error.6001" = "Det gick inte att ansluta. Kontrollera din internetanslutning och försök igen.";
+"error.6002" = "Det tog för lång tid att få svar. Kontrollera din anslutning och försök igen.";
+"error.6003" = "Det går inte att hitta våra servrar. Kontrollera nätverket eller prova ett annat.";
+"error.6004" = "Nätverksfel. Kontrollera din anslutning och försök igen.";
+"error.6005" = "Säker anslutning misslyckades. Kontrollera enhetens datum och tid.";
+"error.6006" = "Våra servrar har problem. Försök igen om en stund.";
+"error.6999" = "Något gick fel. Försök igen.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";

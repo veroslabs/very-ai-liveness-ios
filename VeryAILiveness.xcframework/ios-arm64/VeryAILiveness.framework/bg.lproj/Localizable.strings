@@ -1,0 +1,166 @@
+/* Very Mobile SDK Localization - Bulgarian */
+/* NOTE: This file contains English placeholder text. Please translate all strings to Bulgarian. */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Move your hand left";
+"status.moveHandRight" = "Move your hand right";
+"status.moveHandUp" = "Move your hand up";
+"status.moveHandDown" = "Move your hand down";
+"status.moveHandCloser" = "Bring your hand closer";
+"status.moveHandFarther" = "Move your hand back a bit";
+"status.rotateHandUpward" = "Tilt your hand toward you";
+"status.rotateHandParallel" = "Keep your hand flat";
+"status.flipHandOver" = "Поставете дланта пред камерата";
+"status.spreadFingers" = "Open your hand wide";
+"status.straightenFingers" = "Straighten your fingers";
+"status.spreadThumb" = "Move your thumb out to the side";
+"status.straightenThumb" = "Straighten your thumb";
+"status.brightenHand" = "Find a brighter spot";
+"status.darkenHand" = "Try moving out of direct light";
+"status.focusHand" = "Hold still for a moment";
+"status.keepStill" = "Hold still";
+"status.showGesture" = "Show gesture";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Scan Your Right Palm";
+"scan.scanYourLeftPalm" = "Scan Your Left Palm";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "Първата ръка е завършена";
+"switchPalm.proceedToSwitchHand" = "Сега сканирайте другата си ръка.";
+
+
+/* Auth View Controller */
+"auth.cancel" = "Cancel";
+"auth.termsText" = "By continuing, you agree to our Terms of Service and Privacy Policy.";
+"auth.termsOfService" = "Terms of Service";
+"auth.privacyPolicy" = "Privacy Policy";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Настройте сканирането на дланта";
+"workthrough.subtitle" = "Сканирайте четири пъти за настройка. След това сканирайте веднъж.";
+"workthrough.getStarted" = "Започнете";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Не успяхме да потвърдим дланта ви. Моля, опитайте отново.";
+"error.5006" = "Нещо се обърка. Моля, опитайте отново.";
+"error.5007" = "Сесията ви е изтекла. Моля, опитайте отново.";
+"error.5008" = "Нещо се обърка. Моля, свържете се с поддръжката.";
+"error.5009" = "Нещо се обърка. Моля, свържете се с поддръжката.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Нещо се обърка. Моля, опитайте отново.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "За да сканирате дланта си, моля, разрешете достъп до камерата в настройките на телефона.";
+"error.6102" = "Не успяхме да завършим сканирането. Моля, опитайте отново.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Дланта ви е потвърдена.";
+"scan.successRegistered" = "Биометрията на дланта е настроена.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "зареждане…";
+"common.retrying" = "Повторен опит…";
+"common.success" = "Успех";
+"common.error" = "Грешка";
+"common.done" = "Готово";
+"common.tryAgain" = "Опитайте отново";
+"common.cancel" = "Отказ";
+"common.continue" = "Продължи";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Сканирайте лявата длан";
+"scan.positionLeftHandAgain" = "Сканирайте лявата длан отново";
+"scan.positionRightHand" = "Сканирайте дясната длан";
+"scan.positionRightHandAgain" = "Почти готово — последно сканиране";
+"scan.defaultStatus" = "Сканирайте ръката си";
+"scan.defaultStatusEnroll" = "Сканирайте първата си ръка";
+"scan.showGesture" = "Покажете жест";
+"scan.connectDots" = "Свържете точките";
+"scan.almostDone" = "Почти готово";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Регистриране на длани";
+"scan.verifyingPalm" = "Потвърждаване на длан";
+"scan.successTitleVerified" = "Потвърдено";
+"scan.successTitleRegistered" = "Длани регистрирани";
+"scan.successVerified" = "Дланта ви е потвърдена.";
+"scan.successRegistered" = "Вече можете да се верифицирате с дланите си.";
+
+/* Email Verification */
+"email.continueWithEmail" = "Въведете вашия имейл";
+"email.verifyYourEmail" = "Потвърдете вашия имейл";
+"email.sentCodeTo" = "Кодът е изпратен на";
+"email.resendCode" = "Изпрати кода отново";
+"email.resendInSeconds" = "Повторно изпращане след %@ с";
+"email.invalidCode" = "Невалиден код за потвърждение. Моля, опитайте отново.";
+"email.placeholder" = "Имейл адрес";
+"consent.tip3" = "Сканирането на дланта ви се използва само за потвърждаване на самоличността ви—изтрийте данните си по всяко време";
+"switchPalm.scanOtherHand" = "Сканирайте другата ръка";
+"error.palmLinkedToEmail" = "Дланта ви е свързана с %@";
+"scan.errorTitle" = "Не можахме да проверим вашата длан";
+"common.tryAgainMessage" = "Моля, опитайте отново.";
+"auth.errorTitle" = "Не можахме да продължим към следващата стъпка.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Акаунтът е ограничен";
+"accountRestricted.message" = "Открихме активност, която може да нарушава нашите условия за ползване. Акаунтът ви е ограничен, докато го преглеждаме.\n\nАко смятате, че това е грешка, свържете се с нашия екип за поддръжка.";
+"accountRestricted.getInTouch" = "Свържете се с нас";
+"accountRestricted.cancel" = "Отказ";
+"consent.tip1" = "Създайте акаунт, като сканирате двете си длани. Повторна проверка само с едно сканиране";
+"error.6001" = "Неуспешно свързване. Проверете интернет връзката си и опитайте отново.";
+"error.6002" = "Отговорът отнема твърде много време. Проверете връзката си и опитайте отново.";
+"error.6003" = "Не могат да се разрешат сървърите ни. Проверете мрежата или опитайте с друга.";
+"error.6004" = "Грешка в мрежата. Моля, проверете връзката си и опитайте отново.";
+"error.6005" = "Сигурната връзка не е успешна. Проверете датата и часа на устройството си.";
+"error.6006" = "Нашите сървъри имат проблем. Моля, опитайте отново скоро.";
+"error.6999" = "Нещо се обърка. Моля, опитайте отново.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";

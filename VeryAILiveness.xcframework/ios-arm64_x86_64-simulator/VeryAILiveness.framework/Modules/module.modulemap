@@ -1,0 +1,4 @@
+framework module VeryAILiveness {
+  header "VeryAILiveness-Swift.h"
+  requires objc
+}

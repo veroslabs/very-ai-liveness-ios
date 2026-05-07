@@ -1,0 +1,166 @@
+/* Very Mobile SDK Localization - Czech */
+/* NOTE: This file contains English placeholder text. Please translate all strings to Czech. */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Move your hand left";
+"status.moveHandRight" = "Move your hand right";
+"status.moveHandUp" = "Move your hand up";
+"status.moveHandDown" = "Move your hand down";
+"status.moveHandCloser" = "Bring your hand closer";
+"status.moveHandFarther" = "Move your hand back a bit";
+"status.rotateHandUpward" = "Tilt your hand toward you";
+"status.rotateHandParallel" = "Keep your hand flat";
+"status.flipHandOver" = "Umístěte dlaň před kameru";
+"status.spreadFingers" = "Open your hand wide";
+"status.straightenFingers" = "Straighten your fingers";
+"status.spreadThumb" = "Move your thumb out to the side";
+"status.straightenThumb" = "Straighten your thumb";
+"status.brightenHand" = "Find a brighter spot";
+"status.darkenHand" = "Try moving out of direct light";
+"status.focusHand" = "Hold still for a moment";
+"status.keepStill" = "Hold still";
+"status.showGesture" = "Show gesture";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Scan Your Right Palm";
+"scan.scanYourLeftPalm" = "Scan Your Left Palm";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "První ruka dokončena";
+"switchPalm.proceedToSwitchHand" = "Nyní naskenujte svou druhou ruku.";
+
+
+/* Auth View Controller */
+"auth.cancel" = "Cancel";
+"auth.termsText" = "By continuing, you agree to our Terms of Service and Privacy Policy.";
+"auth.termsOfService" = "Terms of Service";
+"auth.privacyPolicy" = "Privacy Policy";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Nastavte sken dlaně";
+"workthrough.subtitle" = "Naskenujte čtyřikrát pro nastavení. Poté skenujte jednou.";
+"workthrough.getStarted" = "Začít";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Nepodařilo se ověřit vaši dlaň. Zkuste to prosím znovu.";
+"error.5006" = "Něco se pokazilo. Zkuste to prosím znovu.";
+"error.5007" = "Vaše relace vypršela. Zkuste to prosím znovu.";
+"error.5008" = "Něco se pokazilo. Kontaktujte prosím podporu.";
+"error.5009" = "Něco se pokazilo. Kontaktujte prosím podporu.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Něco se pokazilo. Zkuste to prosím znovu.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "Pro naskenování dlaně prosím povolte přístup k fotoaparátu v nastavení telefonu.";
+"error.6102" = "Skenování se nepodařilo dokončit. Zkuste to prosím znovu.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Vaše dlaň byla ověřena.";
+"scan.successRegistered" = "Biometrie dlaně byla nastavena.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "načítání…";
+"common.retrying" = "Opakuji pokus…";
+"common.success" = "Úspěch";
+"common.error" = "Chyba";
+"common.done" = "Hotovo";
+"common.tryAgain" = "Zkusit znovu";
+"common.cancel" = "Zrušit";
+"common.continue" = "Pokračovat";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Naskenujte levou dlaň";
+"scan.positionLeftHandAgain" = "Naskenujte levou dlaň znovu";
+"scan.positionRightHand" = "Naskenujte pravou dlaň";
+"scan.positionRightHandAgain" = "Téměř hotovo — poslední skenování";
+"scan.defaultStatus" = "Naskenujte svou ruku";
+"scan.defaultStatusEnroll" = "Naskenujte svou první ruku";
+"scan.showGesture" = "Ukažte gesto";
+"scan.connectDots" = "Spojte body";
+"scan.almostDone" = "Skoro hotovo";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Registrace dlaní";
+"scan.verifyingPalm" = "Ověřování dlaně";
+"scan.successTitleVerified" = "Ověřeno";
+"scan.successTitleRegistered" = "Dlaně zaregistrovány";
+"scan.successVerified" = "Vaše dlaň byla ověřena.";
+"scan.successRegistered" = "Nyní můžete ověřovat pomocí svých dlaní.";
+
+/* Email Verification */
+"email.continueWithEmail" = "Zadejte svůj e-mail";
+"email.verifyYourEmail" = "Ověřte svůj e-mail";
+"email.sentCodeTo" = "Kód odeslán na";
+"email.resendCode" = "Znovu odeslat kód";
+"email.resendInSeconds" = "Odeslat znovu za %@ s";
+"email.invalidCode" = "Neplatný ověřovací kód. Zkuste to prosím znovu.";
+"email.placeholder" = "E-mailová adresa";
+"consent.tip3" = "Sken vaší dlaně slouží pouze k ověření vaší totožnosti—svá data můžete kdykoli smazat";
+"switchPalm.scanOtherHand" = "Skenovat druhou ruku";
+"error.palmLinkedToEmail" = "Vaše dlaň je propojena s %@";
+"scan.errorTitle" = "Nepodařilo se ověřit vaši dlaň";
+"common.tryAgainMessage" = "Zkuste to prosím znovu.";
+"auth.errorTitle" = "Nepodařilo se pokračovat na další krok.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Účet omezen";
+"accountRestricted.message" = "Zjistili jsme aktivitu, která může porušovat naše podmínky služby. Váš účet byl omezen, zatímco jej prověřujeme.\n\nPokud se domníváte, že jde o chybu, kontaktujte náš tým podpory.";
+"accountRestricted.getInTouch" = "Kontaktujte nás";
+"accountRestricted.cancel" = "Zrušit";
+"consent.tip1" = "Vytvořte účet naskenováním obou dlaní. Opětovné ověření jedním skenem";
+"error.6001" = "Nepodařilo se připojit. Zkontrolujte připojení k internetu a zkuste to znovu.";
+"error.6002" = "Odezva trvala příliš dlouho. Zkontrolujte připojení a zkuste to znovu.";
+"error.6003" = "Nelze najít naše servery. Zkontrolujte síť nebo zkuste jinou.";
+"error.6004" = "Chyba sítě. Zkontrolujte připojení a zkuste to znovu.";
+"error.6005" = "Zabezpečené připojení se nezdařilo. Zkontrolujte datum a čas zařízení.";
+"error.6006" = "Naše servery mají problémy. Zkuste to prosím za chvíli znovu.";
+"error.6999" = "Něco se pokazilo. Zkuste to prosím znovu.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";

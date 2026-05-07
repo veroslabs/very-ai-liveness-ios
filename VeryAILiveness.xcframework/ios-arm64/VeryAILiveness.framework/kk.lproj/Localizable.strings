@@ -1,0 +1,166 @@
+/* Very Mobile SDK Localization - Kazakh */
+/* NOTE: This file contains English placeholder text. Please translate all strings to Kazakh. */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Move your hand left";
+"status.moveHandRight" = "Move your hand right";
+"status.moveHandUp" = "Move your hand up";
+"status.moveHandDown" = "Move your hand down";
+"status.moveHandCloser" = "Bring your hand closer";
+"status.moveHandFarther" = "Move your hand back a bit";
+"status.rotateHandUpward" = "Tilt your hand toward you";
+"status.rotateHandParallel" = "Keep your hand flat";
+"status.flipHandOver" = "Алақаныңызды камера алдына қойыңыз";
+"status.spreadFingers" = "Open your hand wide";
+"status.straightenFingers" = "Straighten your fingers";
+"status.spreadThumb" = "Move your thumb out to the side";
+"status.straightenThumb" = "Straighten your thumb";
+"status.brightenHand" = "Find a brighter spot";
+"status.darkenHand" = "Try moving out of direct light";
+"status.focusHand" = "Hold still for a moment";
+"status.keepStill" = "Hold still";
+"status.showGesture" = "Show gesture";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Scan Your Right Palm";
+"scan.scanYourLeftPalm" = "Scan Your Left Palm";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "Бірінші қол аяқталды";
+"switchPalm.proceedToSwitchHand" = "Енді басқа қолыңызды сканерлеңіз.";
+
+
+/* Auth View Controller */
+"auth.cancel" = "Cancel";
+"auth.termsText" = "By continuing, you agree to our Terms of Service and Privacy Policy.";
+"auth.termsOfService" = "Terms of Service";
+"auth.privacyPolicy" = "Privacy Policy";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Алақан сканерін орнатыңыз";
+"workthrough.subtitle" = "Орнату үшін төрт рет сканерлеңіз. Содан кейін бір рет сканерлеңіз.";
+"workthrough.getStarted" = "Бастау";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Алақаныңызды растай алмадық. Қайталап көріңіз.";
+"error.5006" = "Бірдеңе дұрыс болмады. Қайталап көріңіз.";
+"error.5007" = "Сеансыңыздың мерзімі аяқталды. Қайталап көріңіз.";
+"error.5008" = "Бірдеңе дұрыс болмады. Қолдау қызметіне хабарласыңыз.";
+"error.5009" = "Бірдеңе дұрыс болмады. Қолдау қызметіне хабарласыңыз.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Бірдеңе дұрыс болмады. Қайталап көріңіз.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "Алақаныңызды сканерлеу үшін телефон параметрлерінде камераға рұқсат беріңіз.";
+"error.6102" = "Сканерлеуді аяқтай алмадық. Қайталап көріңіз.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Алақаныңыз расталды.";
+"scan.successRegistered" = "Алақан биометриясы орнатылды.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "жүктелуде…";
+"common.retrying" = "Қайта әрекет жасалуда…";
+"common.success" = "Сәтті";
+"common.error" = "Қате";
+"common.done" = "Дайын";
+"common.tryAgain" = "Қайталап көріңіз";
+"common.cancel" = "Болдырмау";
+"common.continue" = "Жалғастыру";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Сол алақанды сканерлеңіз";
+"scan.positionLeftHandAgain" = "Сол алақанды қайта сканерлеңіз";
+"scan.positionRightHand" = "Оң алақанды сканерлеңіз";
+"scan.positionRightHandAgain" = "Дерлік дайын — соңғы сканерлеу";
+"scan.defaultStatus" = "Қолыңызды сканерлеңіз";
+"scan.defaultStatusEnroll" = "Бірінші қолыңызды сканерлеңіз";
+"scan.showGesture" = "Қимылды көрсетіңіз";
+"scan.connectDots" = "Нүктелерді қосыңыз";
+"scan.almostDone" = "Аяқталуға жақын";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Алақандар тіркелуде";
+"scan.verifyingPalm" = "Алақан расталуда";
+"scan.successTitleVerified" = "Расталды";
+"scan.successTitleRegistered" = "Алақандар тіркелді";
+"scan.successVerified" = "Алақаныңыз расталды.";
+"scan.successRegistered" = "Енді алақандарыңызбен растай аласыз.";
+
+/* Email Verification */
+"email.continueWithEmail" = "Электрондық поштаңызды енгізіңіз";
+"email.verifyYourEmail" = "Электрондық поштаңызды растаңыз";
+"email.sentCodeTo" = "Код жіберілді";
+"email.resendCode" = "Кодты қайта жіберу";
+"email.resendInSeconds" = "%@ с кейін қайта жіберу";
+"email.invalidCode" = "Жарамсыз растау коды. Қайталап көріңіз.";
+"email.placeholder" = "Электрондық пошта мекенжайы";
+"consent.tip3" = "Алақан сканері тек жеке басыңызды растау үшін пайдаланылады—деректеріңізді кез келген уақытта жойыңыз";
+"switchPalm.scanOtherHand" = "Басқа қолды сканерлеңіз";
+"error.palmLinkedToEmail" = "Алақаныңыз %@-мен байланысты";
+"scan.errorTitle" = "Алақаныңызды растай алмадық";
+"common.tryAgainMessage" = "Қайта көріңіз.";
+"auth.errorTitle" = "Келесі қадамға өту мүмкін болмады.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Аккаунт шектелген";
+"accountRestricted.message" = "Біз қызмет көрсету шарттарын бұзуы мүмкін әрекетті анықтадық. Тексеру кезінде аккаунтыңыз шектелді.\n\nЕгер бұл қате деп ойласаңыз, қолдау тобымызбен хабарласыңыз.";
+"accountRestricted.getInTouch" = "Бізбен байланысу";
+"accountRestricted.cancel" = "Бас тарту";
+"consent.tip1" = "Екі алақанды сканерлеп тіркелгі жасаңыз. Тек бір сканерлеумен қайта растаңыз";
+"error.6001" = "Қосылу мүмкін болмады. Интернет байланысын тексеріп, қайталап көріңіз.";
+"error.6002" = "Жауап алу ұзақ уақытты қажет етті. Байланысты тексеріп, қайталап көріңіз.";
+"error.6003" = "Серверлерімізді анықтау мүмкін емес. Желіні тексеріңіз немесе басқа желіге қосылыңыз.";
+"error.6004" = "Желі қатесі. Байланысты тексеріп, қайталап көріңіз.";
+"error.6005" = "Қауіпсіз байланыс сәтсіз аяқталды. Құрылғыңыздағы күн мен уақытты тексеріңіз.";
+"error.6006" = "Серверлерімізде ақаулық бар. Біраздан кейін қайталап көріңіз.";
+"error.6999" = "Қате орын алды. Қайталап көріңіз.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";

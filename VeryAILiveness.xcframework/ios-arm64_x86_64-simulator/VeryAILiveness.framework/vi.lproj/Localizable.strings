@@ -1,0 +1,164 @@
+/* Very Mobile SDK Localization - Vietnamese */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Di chuyển tay sang trái";
+"status.moveHandRight" = "Di chuyển tay sang phải";
+"status.moveHandUp" = "Di chuyển tay lên trên";
+"status.moveHandDown" = "Di chuyển tay xuống dưới";
+"status.moveHandCloser" = "Đưa tay lại gần hơn";
+"status.moveHandFarther" = "Đưa tay lùi lại một chút";
+"status.rotateHandUpward" = "Nghiêng tay về phía bạn";
+"status.rotateHandParallel" = "Giữ tay phẳng";
+"status.flipHandOver" = "Đặt lòng bàn tay trước camera";
+"status.spreadFingers" = "Mở rộng bàn tay";
+"status.straightenFingers" = "Duỗi thẳng các ngón tay";
+"status.spreadThumb" = "Đưa ngón cái ra ngoài";
+"status.straightenThumb" = "Duỗi thẳng ngón cái";
+"status.brightenHand" = "Tìm chỗ sáng hơn";
+"status.darkenHand" = "Tránh ánh sáng trực tiếp";
+"status.focusHand" = "Giữ yên một chút";
+"status.keepStill" = "Giữ yên";
+"status.showGesture" = "Hiển thị cử chỉ";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Quét lòng bàn tay phải";
+"scan.scanYourLeftPalm" = "Quét lòng bàn tay trái";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "Bàn tay đầu tiên hoàn thành";
+"switchPalm.proceedToSwitchHand" = "Bây giờ hãy quét bàn tay kia của bạn.";
+
+/* Auth View Controller */
+"auth.cancel" = "Hủy";
+"auth.termsText" = "Bằng cách tiếp tục, bạn đồng ý với Điều khoản Dịch vụ và Chính sách Quyền riêng tư của chúng tôi.";
+"auth.termsOfService" = "Điều khoản Dịch vụ";
+"auth.privacyPolicy" = "Chính sách Quyền riêng tư";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Thiết lập quét lòng bàn tay";
+"workthrough.subtitle" = "Quét bốn lần để thiết lập. Sau đó, quét một lần.";
+"workthrough.getStarted" = "Bắt đầu";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Chúng tôi không thể xác minh lòng bàn tay của bạn. Vui lòng thử lại.";
+"error.5006" = "Đã xảy ra lỗi. Vui lòng thử lại.";
+"error.5007" = "Phiên của bạn đã hết hạn. Vui lòng thử lại.";
+"error.5008" = "Đã xảy ra lỗi. Vui lòng liên hệ bộ phận hỗ trợ.";
+"error.5009" = "Đã xảy ra lỗi. Vui lòng liên hệ bộ phận hỗ trợ.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Đã xảy ra lỗi. Vui lòng thử lại.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "Để quét lòng bàn tay, vui lòng cho phép truy cập máy ảnh trong cài đặt điện thoại của bạn.";
+"error.6102" = "Chúng tôi không thể hoàn tất quá trình quét. Vui lòng thử lại.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Lòng bàn tay của bạn đã được xác minh.";
+"scan.successRegistered" = "Sinh trắc học lòng bàn tay đã được thiết lập.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "đang tải…";
+"common.retrying" = "Đang thử lại…";
+"common.success" = "Thành công";
+"common.error" = "Lỗi";
+"common.done" = "Xong";
+"common.tryAgain" = "Thử lại";
+"common.cancel" = "Hủy";
+"common.continue" = "Tiếp tục";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Quét lòng bàn tay trái";
+"scan.positionLeftHandAgain" = "Quét lại lòng bàn tay trái";
+"scan.positionRightHand" = "Quét lòng bàn tay phải";
+"scan.positionRightHandAgain" = "Sắp xong — lần quét cuối";
+"scan.defaultStatus" = "Quét tay của bạn";
+"scan.defaultStatusEnroll" = "Quét tay đầu tiên của bạn";
+"scan.showGesture" = "Hiển thị cử chỉ";
+"scan.connectDots" = "Nối các chấm";
+"scan.almostDone" = "Sắp xong";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Đang đăng ký lòng bàn tay";
+"scan.verifyingPalm" = "Đang xác minh lòng bàn tay";
+"scan.successTitleVerified" = "Đã xác minh";
+"scan.successTitleRegistered" = "Lòng bàn tay đã đăng ký";
+"scan.successVerified" = "Lòng bàn tay của bạn đã được xác minh.";
+"scan.successRegistered" = "Bây giờ bạn có thể xác minh bằng lòng bàn tay của mình.";
+
+/* Email Verification */
+"email.continueWithEmail" = "Nhập email của bạn";
+"email.verifyYourEmail" = "Xác minh email của bạn";
+"email.sentCodeTo" = "Mã đã gửi đến";
+"email.resendCode" = "Gửi lại mã";
+"email.resendInSeconds" = "Gửi lại sau %@ giây";
+"email.invalidCode" = "Mã xác minh không hợp lệ. Vui lòng thử lại.";
+"email.placeholder" = "Địa chỉ email";
+"consent.tip3" = "Quét lòng bàn tay của bạn chỉ được dùng để xác minh danh tính—xóa dữ liệu của bạn bất cứ lúc nào";
+"switchPalm.scanOtherHand" = "Quét bàn tay kia";
+"error.palmLinkedToEmail" = "Lòng bàn tay của bạn được liên kết với %@";
+"scan.errorTitle" = "Chúng tôi không thể xác minh lòng bàn tay của bạn";
+"common.tryAgainMessage" = "Vui lòng thử lại.";
+"auth.errorTitle" = "Chúng tôi không thể tiếp tục bước tiếp theo.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Tài khoản bị hạn chế";
+"accountRestricted.message" = "Chúng tôi đã phát hiện hoạt động có thể vi phạm điều khoản dịch vụ của chúng tôi. Tài khoản của bạn đã bị hạn chế trong khi chúng tôi xem xét.\n\nNếu bạn cho rằng đây là lỗi, vui lòng liên hệ đội ngũ hỗ trợ của chúng tôi.";
+"accountRestricted.getInTouch" = "Liên hệ với chúng tôi";
+"accountRestricted.cancel" = "Hủy";
+"consent.tip1" = "Tạo tài khoản bằng cách quét cả hai lòng bàn tay. Xác minh lại chỉ với một lần quét";
+"error.6001" = "Không thể kết nối. Hãy kiểm tra kết nối internet và thử lại.";
+"error.6002" = "Mất quá nhiều thời gian để nhận phản hồi. Hãy kiểm tra kết nối và thử lại.";
+"error.6003" = "Không thể tìm thấy máy chủ của chúng tôi. Hãy kiểm tra mạng hoặc thử mạng khác.";
+"error.6004" = "Lỗi mạng. Vui lòng kiểm tra kết nối và thử lại.";
+"error.6005" = "Kết nối bảo mật không thành công. Hãy kiểm tra ngày và giờ trên thiết bị.";
+"error.6006" = "Máy chủ của chúng tôi đang gặp sự cố. Vui lòng thử lại sau ít phút.";
+"error.6999" = "Đã xảy ra lỗi. Vui lòng thử lại.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";

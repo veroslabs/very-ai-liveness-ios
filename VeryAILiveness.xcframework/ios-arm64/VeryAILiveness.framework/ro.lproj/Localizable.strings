@@ -1,0 +1,166 @@
+/* Very Mobile SDK Localization - Romanian */
+/* NOTE: This file contains English placeholder text. Please translate all strings to Romanian. */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Move your hand left";
+"status.moveHandRight" = "Move your hand right";
+"status.moveHandUp" = "Move your hand up";
+"status.moveHandDown" = "Move your hand down";
+"status.moveHandCloser" = "Bring your hand closer";
+"status.moveHandFarther" = "Move your hand back a bit";
+"status.rotateHandUpward" = "Tilt your hand toward you";
+"status.rotateHandParallel" = "Keep your hand flat";
+"status.flipHandOver" = "Plasați palma în fața camerei";
+"status.spreadFingers" = "Open your hand wide";
+"status.straightenFingers" = "Straighten your fingers";
+"status.spreadThumb" = "Move your thumb out to the side";
+"status.straightenThumb" = "Straighten your thumb";
+"status.brightenHand" = "Find a brighter spot";
+"status.darkenHand" = "Try moving out of direct light";
+"status.focusHand" = "Hold still for a moment";
+"status.keepStill" = "Hold still";
+"status.showGesture" = "Show gesture";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Scan Your Right Palm";
+"scan.scanYourLeftPalm" = "Scan Your Left Palm";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "Prima mână completă";
+"switchPalm.proceedToSwitchHand" = "Acum scanează-ți cealaltă mână.";
+
+
+/* Auth View Controller */
+"auth.cancel" = "Cancel";
+"auth.termsText" = "By continuing, you agree to our Terms of Service and Privacy Policy.";
+"auth.termsOfService" = "Terms of Service";
+"auth.privacyPolicy" = "Privacy Policy";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Configurați scanarea palmei";
+"workthrough.subtitle" = "Scanați de patru ori pentru configurare. După aceea, scanați o dată.";
+"workthrough.getStarted" = "Începeți";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Nu am putut verifica palma dumneavoastră. Vă rugăm să încercați din nou.";
+"error.5006" = "Ceva nu a funcționat. Vă rugăm să încercați din nou.";
+"error.5007" = "Sesiunea dumneavoastră a expirat. Vă rugăm să încercați din nou.";
+"error.5008" = "Ceva nu a funcționat. Vă rugăm să contactați asistența.";
+"error.5009" = "Ceva nu a funcționat. Vă rugăm să contactați asistența.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Ceva nu a funcționat. Vă rugăm să încercați din nou.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "Pentru a vă scana palma, permiteți accesul la cameră în setările telefonului.";
+"error.6102" = "Nu am putut finaliza scanarea. Vă rugăm să încercați din nou.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Palma dumneavoastră a fost verificată.";
+"scan.successRegistered" = "Biometria palmei a fost configurată.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "se încarcă…";
+"common.retrying" = "Se reîncearcă…";
+"common.success" = "Succes";
+"common.error" = "Eroare";
+"common.done" = "Gata";
+"common.tryAgain" = "Încearcă din nou";
+"common.cancel" = "Anulare";
+"common.continue" = "Continuă";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Scanați palma stângă";
+"scan.positionLeftHandAgain" = "Scanați palma stângă din nou";
+"scan.positionRightHand" = "Scanați palma dreaptă";
+"scan.positionRightHandAgain" = "Aproape gata — ultima scanare";
+"scan.defaultStatus" = "Scanați-vă mâna";
+"scan.defaultStatusEnroll" = "Scanați-vă prima mână";
+"scan.showGesture" = "Arătați gestul";
+"scan.connectDots" = "Conectați punctele";
+"scan.almostDone" = "Aproape gata";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Înregistrare palme";
+"scan.verifyingPalm" = "Verificare palmă";
+"scan.successTitleVerified" = "Verificat";
+"scan.successTitleRegistered" = "Palme înregistrate";
+"scan.successVerified" = "Palma ta a fost verificată.";
+"scan.successRegistered" = "Acum te poți verifica folosind palmele tale.";
+
+/* Email Verification */
+"email.continueWithEmail" = "Introduceți adresa de email";
+"email.verifyYourEmail" = "Verificați-vă emailul";
+"email.sentCodeTo" = "Cod trimis la";
+"email.resendCode" = "Retrimiteți codul";
+"email.resendInSeconds" = "Retrimite în %@ s";
+"email.invalidCode" = "Cod de verificare invalid. Vă rugăm să încercați din nou.";
+"email.placeholder" = "Adresă de email";
+"consent.tip3" = "Scanarea palmei dvs. este utilizată doar pentru a vă verifica identitatea—ștergeți datele oricând";
+"switchPalm.scanOtherHand" = "Scanează cealaltă mână";
+"error.palmLinkedToEmail" = "Palma ta este legată de %@";
+"scan.errorTitle" = "Nu am putut verifica palma dvs.";
+"common.tryAgainMessage" = "Vă rugăm să încercați din nou.";
+"auth.errorTitle" = "Nu am putut trece la pasul următor.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Cont restricționat";
+"accountRestricted.message" = "Am detectat activitate care ar putea încălca termenii noștri de utilizare. Contul dvs. a fost restricționat în timp ce îl analizăm.\n\nDacă credeți că aceasta este o eroare, contactați echipa noastră de asistență.";
+"accountRestricted.getInTouch" = "Contactați-ne";
+"accountRestricted.cancel" = "Anulează";
+"consent.tip1" = "Creați un cont scanând ambele palme. Reverificați cu o singură scanare";
+"error.6001" = "Nu s-a putut conecta. Verifică conexiunea la internet și încearcă din nou.";
+"error.6002" = "Răspunsul a durat prea mult. Verifică conexiunea și încearcă din nou.";
+"error.6003" = "Nu putem găsi serverele noastre. Verifică rețeaua sau încearcă altă rețea.";
+"error.6004" = "Eroare de rețea. Verifică conexiunea și încearcă din nou.";
+"error.6005" = "Conexiunea securizată a eșuat. Verifică data și ora dispozitivului.";
+"error.6006" = "Serverele noastre au probleme. Încearcă din nou în scurt timp.";
+"error.6999" = "Ceva nu a mers bine. Încearcă din nou.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";

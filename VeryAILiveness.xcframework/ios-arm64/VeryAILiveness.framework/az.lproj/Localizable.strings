@@ -1,0 +1,166 @@
+/* Very Mobile SDK Localization - Azerbaijani */
+/* NOTE: This file contains English placeholder text. Please translate all strings to Azerbaijani. */
+
+/* Bottom Status Messages */
+"status.moveHandLeft" = "Move your hand left";
+"status.moveHandRight" = "Move your hand right";
+"status.moveHandUp" = "Move your hand up";
+"status.moveHandDown" = "Move your hand down";
+"status.moveHandCloser" = "Bring your hand closer";
+"status.moveHandFarther" = "Move your hand back a bit";
+"status.rotateHandUpward" = "Tilt your hand toward you";
+"status.rotateHandParallel" = "Keep your hand flat";
+"status.flipHandOver" = "Ovucunuzu kameranın qarşısına qoyun";
+"status.spreadFingers" = "Open your hand wide";
+"status.straightenFingers" = "Straighten your fingers";
+"status.spreadThumb" = "Move your thumb out to the side";
+"status.straightenThumb" = "Straighten your thumb";
+"status.brightenHand" = "Find a brighter spot";
+"status.darkenHand" = "Try moving out of direct light";
+"status.focusHand" = "Hold still for a moment";
+"status.keepStill" = "Hold still";
+"status.showGesture" = "Show gesture";
+
+/* Scan View Controller */
+"scan.scanYourRightPalm" = "Scan Your Right Palm";
+"scan.scanYourLeftPalm" = "Scan Your Left Palm";
+"scan.scanEitherPalm" = "Verify with palm";
+
+/* Switch Palm View */
+"switchPalm.scanComplete" = "Birinci əl tamamlandı";
+"switchPalm.proceedToSwitchHand" = "İndi digər əlinizi skan edin.";
+
+
+/* Auth View Controller */
+"auth.cancel" = "Cancel";
+"auth.termsText" = "By continuing, you agree to our Terms of Service and Privacy Policy.";
+"auth.termsOfService" = "Terms of Service";
+"auth.privacyPolicy" = "Privacy Policy";
+
+/* WorkThrough View Controller */
+"workthrough.title" = "Ovuc skanını qur";
+"workthrough.subtitle" = "Qurmaq üçün dörd dəfə skan edin. Sonra bir dəfə skan edin.";
+"workthrough.getStarted" = "Başla";
+
+/* Error Messages */
+"error.5001" = "Session expired. Please start again.";
+"error.5002" = "Session not found or already consumed.";
+"error.5003" = "Please try again.";
+"error.5004" = "All verification attempts have been used.";
+"error.5005" = "Ovucunuzu doğrulaya bilmədik. Zəhmət olmasa, yenidən cəhd edin.";
+"error.5006" = "Xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin.";
+"error.5007" = "Seansınızın müddəti bitib. Zəhmət olmasa, yenidən cəhd edin.";
+"error.5008" = "Xəta baş verdi. Zəhmət olmasa, dəstək xidməti ilə əlaqə saxlayın.";
+"error.5009" = "Xəta baş verdi. Zəhmət olmasa, dəstək xidməti ilə əlaqə saxlayın.";
+"error.5010" = "Account review was permanently rejected.";
+"error.5011" = "Account enrollment is still under review.";
+"error.5012" = "Re-enrollment is only allowed when review status is rejected.";
+"error.5013" = "Too many requests. Please try again later.";
+"error.5014" = "Xəta baş verdi. Zəhmət olmasa, yenidən cəhd edin.";
+"error.5015" = "Please verify your email first.";
+"error.5016" = "Email has already been verified for this session.";
+"error.5017" = "Your account is restricted and cannot proceed.";
+"error.5018" = "Email verification is not available for this session.";
+"error.6101" = "Ovucunuzu skan etmək üçün telefonunuzun parametrlərindən kameraya icazə verin.";
+"error.6102" = "Skanı tamamlaya bilmədik. Zəhmət olmasa, yenidən cəhd edin.";
+"error.6103" = "Session expired. Please try again.";
+"error.6104" = "User cancelled.";
+"error.6106" = "Could not load the palm scanning library. Check your internet and try again.";
+
+/* Success Bottom Sheet Messages */
+"scan.successVerified" = "Ovucunuz doğrulandı.";
+"scan.successRegistered" = "Ovuc biometrikası quruldu.";
+
+/* Common UI */
+"common.poweredBy" = "Powered by";
+"common.loading" = "yüklənir…";
+"common.retrying" = "Yenidən cəhd edilir…";
+"common.success" = "Uğurlu";
+"common.error" = "Xəta";
+"common.done" = "Hazır";
+"common.tryAgain" = "Yenidən cəhd edin";
+"common.cancel" = "Ləğv et";
+"common.continue" = "Davam et";
+
+/* Scan Status */
+"scan.positionLeftHand" = "Sol ovucu skan edin";
+"scan.positionLeftHandAgain" = "Sol ovucu yenidən skan edin";
+"scan.positionRightHand" = "Sağ ovucu skan edin";
+"scan.positionRightHandAgain" = "Demək olar ki, bitdi — son skan";
+"scan.defaultStatus" = "Əlinizi skan edin";
+"scan.defaultStatusEnroll" = "İlk əlinizi skan edin";
+"scan.showGesture" = "Jesti göstərin";
+"scan.connectDots" = "Nöqtələri birləşdirin";
+"scan.almostDone" = "Demək olar ki hazırdır";
+"scan.livenessThanks" = "Thanks for verifying";
+"scan.registeringPalms" = "Ovuclar qeydiyyat olunur";
+"scan.verifyingPalm" = "Ovuc doğrulanır";
+"scan.successTitleVerified" = "Təsdiqləndi";
+"scan.successTitleRegistered" = "Ovuclar qeydiyyatdan keçdi";
+"scan.successVerified" = "Ovucunuz təsdiqləndi.";
+"scan.successRegistered" = "İndi ovuclarınızla təsdiqləyə bilərsiniz.";
+
+/* Email Verification */
+"email.continueWithEmail" = "E-poçtunuzu daxil edin";
+"email.verifyYourEmail" = "E-poçtunuzu təsdiqləyin";
+"email.sentCodeTo" = "Kod göndərildi";
+"email.resendCode" = "Kodu yenidən göndər";
+"email.resendInSeconds" = "%@ saniyə sonra təkrar göndər";
+"email.invalidCode" = "Yanlış təsdiq kodu. Zəhmət olmasa, yenidən cəhd edin.";
+"email.placeholder" = "E-poçt ünvanı";
+"consent.tip3" = "Ovuc iziniz yalnız kimliyinizi təsdiqləmək üçün istifadə olunur—məlumatlarınızı istənilən vaxt silin";
+"switchPalm.scanOtherHand" = "Digər əli skan et";
+"error.palmLinkedToEmail" = "Ovucunuz %@ ilə bağlıdır";
+"scan.errorTitle" = "Ovucunuzu doğrulaya bilmədik";
+"common.tryAgainMessage" = "Zəhmət olmasa yenidən cəhd edin.";
+"auth.errorTitle" = "Növbəti addıma keçə bilmədik.";
+
+/* Account Restricted */
+"accountRestricted.title" = "Hesab məhdudlaşdırılıb";
+"accountRestricted.message" = "Xidmət şərtlərimizi poza biləcək fəaliyyət aşkar etdik. Hesabınız araşdırılarkən məhdudlaşdırılıb.\n\nBunun səhv olduğunu düşünürsünüzsə, dəstək komandamızla əlaqə saxlayın.";
+"accountRestricted.getInTouch" = "Əlaqə saxlayın";
+"accountRestricted.cancel" = "Ləğv et";
+"consent.tip1" = "Hər iki ovucunuzu skan edərək hesab yaradın. Yalnız bir skan ilə yenidən doğrulayın";
+"error.6001" = "Bağlantı qurulmadı. İnternet bağlantınızı yoxlayın və yenidən cəhd edin.";
+"error.6002" = "Cavab almaq çox uzun çəkdi. Bağlantınızı yoxlayın və yenidən cəhd edin.";
+"error.6003" = "Serverlərimizə ünvan həlli mümkün olmadı. Şəbəkəni yoxlayın və ya başqa şəbəkəyə keçin.";
+"error.6004" = "Şəbəkə xətası. Bağlantınızı yoxlayın və yenidən cəhd edin.";
+"error.6005" = "Təhlükəsiz bağlantı uğursuz oldu. Cihazınızdakı tarix və saatı yoxlayın.";
+"error.6006" = "Serverlərimizdə problem var. Bir azdan yenidən cəhd edin.";
+"error.6999" = "Nəsə səhv getdi. Yenidən cəhd edin.";
+
+/* VER-491: error bottom sheet (SDKErrorPresentation.swift) */
+"error.title.connectionLost" = "Connection lost";
+"error.body.connectionLost" = "You're offline. Check your internet.";
+"error.title.rateLimited" = "Just a moment";
+"error.body.rateLimited" = "Try again in a moment.";
+"error.title.sessionExpired" = "Let's try that again";
+"error.body.sessionExpired" = "Your session timed out. Let's try that again.";
+"error.title.checkAccount" = "Check your account";
+"error.body.checkAccount" = "Your last attempt may have already gone through.";
+"error.title.cameraPermission" = "We need your camera";
+"error.body.cameraPermission" = "Turn on camera access in settings.";
+"error.title.palmMismatch" = "That didn't match";
+"error.body.palmMismatch" = "We couldn't verify your palm.";
+"error.title.scanFailed" = "Let's try that again";
+"error.body.scanFailed" = "Move to better lighting and keep your hand steady.";
+"error.title.restrictive" = "We can't continue";
+"error.body.restrictive" = "We're unable to complete this right now.";
+"error.title.setupIssue" = "Please get in touch";
+"error.body.setupIssue" = "This app has a setup problem. Please contact support.";
+"error.title.serverTransient" = "Let's try that again";
+"error.body.serverTransient" = "If this issue continues, please contact support.";
+"error.title.enrollmentMismatch" = "Let's try that again";
+"error.body.enrollmentMismatch" = "We couldn't verify the palm scans. Please try again under a better lighting condition";
+"error.cta.tryAgain" = "Try again";
+"error.cta.startOver" = "Start over";
+"error.cta.checkAccount" = "Check my account";
+"error.cta.openSettings" = "Open settings";
+"error.cta.contactSupport" = "Contact support";
+"error.cta.close" = "Close";
+
+/* VER-491 inline: field-level email verify errors (2006/2007) */
+"email.inlineCodeInvalid" = "Code is incorrect.";
+"email.inlineCodeExpired" = "Code has expired. Request a new code.";
+"email.inlineCodeRateLimit" = "Too many attempts. Please request a new code.";
+"email.inlineCodeGeneric" = "Verification failed.";
