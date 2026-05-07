@@ -330,11 +330,17 @@ enum VeryPresentationStyle : NSInteger;
 
 /// Public entry point for the <em>liveness-only</em> distribution
 /// (<code>VeryAILiveness.framework</code>). Opens a single-shot palm scan page that
-/// confirms a live human palm — no network calls, no enrollment, no
-/// verification, no email flow. The host’s <code>completion</code> fires with
-/// <code>VeryResult(code: "success", ...)</code> on a successful capture, or a
-/// cancel/error result if the user dismisses the page or the
-/// camera/native lib fails.
+/// confirms a live human palm — no enrollment, no verification, no email
+/// flow.
+/// The flow does call two backend endpoints (<code>POST /v1/sdk/liveness-sessions</code>
+/// on entry to issue a one-time nonce; <code>POST /v1/sdk/liveness-sessions/{id}/result</code>
+/// on exit to record the outcome for metrics). Both require the SDK API
+/// key set on <code>VeryLivenessConfig</code>. The result POST is fire-and-forget —
+/// it doesn’t block the host completion.
+/// The host’s <code>completion</code> fires with <code>VeryResult(code: "success", ...)</code>
+/// on a successful capture, or a cancel/error result if the user
+/// dismisses the page, the camera/native lib fails, or session creation
+/// fails.
 /// Auth-flow consumers should depend on <code>VerySDK.framework</code> instead and use
 /// <code>VerySDK.authenticate()</code>. That class is <em>not</em> present in this framework.
 SWIFT_CLASS("_TtC14VeryAILiveness14VeryAILiveness")

@@ -5055,6 +5055,20 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "VeryAILiveness"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VeryAILiveness"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6910,77 +6924,70 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "StringLiteral",
-      "offset": 666,
-      "length": 7,
-      "value": "\"1.0.0\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
-      "kind": "StringLiteral",
-      "offset": 708,
+      "offset": 866,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "IntegerLiteral",
-      "offset": 771,
+      "offset": 929,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "StringLiteral",
-      "offset": 1090,
+      "offset": 1248,
       "length": 29,
       "value": "\"https:\/\/api.very.org\/v1\/sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "BooleanLiteral",
-      "offset": 1309,
+      "offset": 1467,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "StringLiteral",
-      "offset": 1357,
+      "offset": 1515,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "StringLiteral",
-      "offset": 1403,
+      "offset": 1561,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "StringLiteral",
-      "offset": 1463,
+      "offset": 1621,
       "length": 30,
       "value": "\"com.very.sdk.telemetry.state\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "Dictionary",
-      "offset": 1555,
+      "offset": 1713,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "StringLiteral",
-      "offset": 1915,
+      "offset": 2073,
       "length": 29,
       "value": "\"com.very.sdk.telemetry.path\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/VeryTelemetry.swift",
       "kind": "StringLiteral",
-      "offset": 2023,
+      "offset": 2181,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -7764,14 +7771,14 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2493,
+      "offset": 2829,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2982,
+      "offset": 3318,
       "length": 5,
       "value": "false"
     },
@@ -9638,6 +9645,48 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LivenessConfigCache.swift",
+      "kind": "StringLiteral",
+      "offset": 1525,
+      "length": 41,
+      "value": "\"VeryAI.LivenessConfig.v1.sendTelemetry.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LivenessConfigCache.swift",
+      "kind": "StringLiteral",
+      "offset": 1767,
+      "length": 5,
+      "value": "\".ts\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LivenessConfigCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2216,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LivenessConfigCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2220,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LivenessConfigCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2225,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/LivenessConfigCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2230,
+      "length": 2,
+      "value": "60"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/SDKLog.swift",
       "kind": "StringLiteral",
       "offset": 386,
@@ -9731,14 +9780,14 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/LivenessApi.swift",
       "kind": "StringLiteral",
-      "offset": 1222,
+      "offset": 1728,
       "length": 29,
       "value": "\"https:\/\/api.very.org\/v1\/sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/LivenessApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1300,
+      "offset": 1806,
       "length": 2,
       "value": "15"
     }
