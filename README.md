@@ -18,7 +18,7 @@ pod 'VeryAILiveness/Bundled'   # ships ~8 MB packed_data.bin in the framework
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.43")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.44")
 ```
 
 Two product names are exposed:
@@ -124,7 +124,7 @@ If your network restricts egress, allowlist the following:
 | Liveness session create | `https://api.very.org/v1/sdk/liveness-sessions` |
 | Liveness result POST | `https://api.very.org/v1/sdk/liveness-sessions/{id}/result` |
 | Model download (primary) | `https://assets.very.org/sdk/v2/packed_data.bin` |
-| Model download (backup) | `https://r2.assets.very.org/sdk/packed_data.bin` |
+| Model download (backup) | `https://r2.assets.very.org/sdk/v2/sdk_packed_data.bin` |
 
 The result POST is fire-and-forget — it doesn't block the host
 completion. The model download path is unused in bundled mode after

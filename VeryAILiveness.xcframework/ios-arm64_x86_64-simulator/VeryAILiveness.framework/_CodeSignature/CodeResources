@@ -48,6 +48,10 @@
 		<data>
 		vr2jLwyMh4P/aLrbws+iin+z/ec=
 		</data>
+		<key>Images/error-warning-line.png</key>
+		<data>
+		XjvHaZrNmnLnFgGwCNeP6bmPZ3w=
+		</data>
 		<key>Images/fist.png</key>
 		<data>
 		TVBFkwktfL7qzFV98tUu2/sRP7c=
@@ -166,11 +170,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3RKTuP4yVL7op7NhJBiRf1QBlYs=
+		KmEPsGJCfRV23RoRSHw/CDPhKeA=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kZAibVKxl65PAn23EA5NinDzGnE=
+		yPmIdWig0+tKbsCmyly16yzzOF4=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -186,11 +190,11 @@
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MGHRhjyaCQGt5MCJEumRnQwW5Ro=
+		N3g4k37jlgBmy1lwYoHCHK7Q6VY=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kZAibVKxl65PAn23EA5NinDzGnE=
+		yPmIdWig0+tKbsCmyly16yzzOF4=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -206,7 +210,7 @@
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0m/iTlo8HgU1LjjEKtwv8oYgstQ=
+		KAP3+gjbmBEim1mPLUK4rwFbEkA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -279,20 +283,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GAuGJ7qMiwvxS8EDvbJZ2D2hhQU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			n/JQvdFZDdAEFwuulIMP2eU4BZQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>enIn.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GAuGJ7qMiwvxS8EDvbJZ2D2hhQU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -513,16 +517,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Un+24itqh1O1Tlg+gdnuoclOasQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zhHk.lproj/Localizable.strings</key>
+		<key>zh-HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -531,11 +526,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zhTw.lproj/Localizable.strings</key>
+		<key>zh-TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			Bmw+aQQw6eemGZZeBDWOWnD8PqE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Un+24itqh1O1Tlg+gdnuoclOasQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -618,6 +622,13 @@
 			<key>hash2</key>
 			<data>
 			rLS4pG7ACUZhhYmrxWgxmCBx+G/xmgUGAHzR/qF7aVg=
+			</data>
+		</dict>
+		<key>Images/error-warning-line.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H3giiCV6ta/+WK5aMc1xONZtmY6Cmn8/hen10jkyk+Y=
 			</data>
 		</dict>
 		<key>Images/fist.png</key>
@@ -827,7 +838,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OCDjwQg3JFSOWVrhCwDB3Itec/Hk9um7LHerCRMzoi8=
+			+TFn2a4C+T5tpTfnJ1KJaG27TZLAG0z4bAQ0OjAKcDA=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -855,14 +866,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r4xKf+kLStqxx1MCiRMp4KXvWgfo0ibwVkFitzKaRkg=
+			9Ek5LnwIRgYFCkTP+EySIuh7POwBRluiOLNBFhFMPW8=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OCDjwQg3JFSOWVrhCwDB3Itec/Hk9um7LHerCRMzoi8=
+			+TFn2a4C+T5tpTfnJ1KJaG27TZLAG0z4bAQ0OjAKcDA=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -890,7 +901,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WD1YNie9Iku+GW6o/DCBY8uSVKQyCW7o+4slnlIBm+0=
+			tArgAj/VmeoHYfCzfYAr56MIczwGS7GH54Q/atOo0bM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -970,20 +981,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>en-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HSKFklpoCF2UqlzacYbRZnlp0SfxFSN8F2RTsMGby1s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			0OgSWBmyYADGPHW+sUgqFvi2T74vB2dGgqFLWEr8aTg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>enIn.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HSKFklpoCF2UqlzacYbRZnlp0SfxFSN8F2RTsMGby1s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1204,16 +1215,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zh.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NBfen0T+arHxGhuJxGaLtyOd/6xOq1tqKynFYGZk12Q=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zhHk.lproj/Localizable.strings</key>
+		<key>zh-HK.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -1222,11 +1224,20 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>zhTw.lproj/Localizable.strings</key>
+		<key>zh-TW.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			kOnXHAJwQXmI1SvgPnyxaZt3KU0NZkMJCr2Iyf87qpI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NBfen0T+arHxGhuJxGaLtyOd/6xOq1tqKynFYGZk12Q=
 			</data>
 			<key>optional</key>
 			<true/>
