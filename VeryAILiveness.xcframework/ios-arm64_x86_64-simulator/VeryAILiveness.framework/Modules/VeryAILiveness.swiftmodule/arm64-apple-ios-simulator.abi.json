@@ -4121,7 +4121,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "Custom",
               "AccessControl",
@@ -4146,9 +4145,6 @@
                 "mangledName": "$s14VeryAILiveness17CameraPreviewViewC016dropFramesDuringC10AdjustmentSbvg",
                 "moduleName": "VeryAILiveness",
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -4173,9 +4169,6 @@
                 "mangledName": "$s14VeryAILiveness17CameraPreviewViewC016dropFramesDuringC10AdjustmentSbvs",
                 "moduleName": "VeryAILiveness",
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -4194,9 +4187,6 @@
                 "mangledName": "$s14VeryAILiveness17CameraPreviewViewC016dropFramesDuringC10AdjustmentSbvM",
                 "moduleName": "VeryAILiveness",
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -4219,7 +4209,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "Custom",
               "SetterAccess",
@@ -4245,9 +4234,6 @@
                 "mangledName": "$s14VeryAILiveness17CameraPreviewViewC15adjustmentStateAA0c10AdjustmentG0Vvg",
                 "moduleName": "VeryAILiveness",
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -4304,7 +4290,7 @@
             "overriding": true,
             "objc_name": "layoutSubviews",
             "declAttributes": [
-              "Final",
+              "Dynamic",
               "ObjC",
               "Custom",
               "Override",
@@ -4330,7 +4316,7 @@
             "overriding": true,
             "objc_name": "didMoveToWindow",
             "declAttributes": [
-              "Final",
+              "Dynamic",
               "ObjC",
               "Custom",
               "Override",
@@ -4356,7 +4342,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4379,7 +4364,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4411,7 +4395,34 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNeededSide",
+            "printedName": "setNeededSide(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14VeryAILiveness17CameraPreviewViewC13setNeededSideyys5Int32VF",
+            "mangledName": "$s14VeryAILiveness17CameraPreviewViewC13setNeededSideyys5Int32VF",
+            "moduleName": "VeryAILiveness",
+            "declAttributes": [
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4443,9 +4454,7 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4492,7 +4501,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4541,7 +4549,6 @@
             "moduleName": "VeryAILiveness",
             "objc_name": "captureOutput:didFinishProcessingPhoto:error:",
             "declAttributes": [
-              "Final",
               "ObjC",
               "Custom",
               "AccessControl",
@@ -4566,7 +4573,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4589,7 +4595,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4618,7 +4623,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4641,7 +4645,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4664,7 +4667,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4693,7 +4695,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4722,7 +4723,6 @@
             "moduleName": "VeryAILiveness",
             "declAttributes": [
               "Custom",
-              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -4763,7 +4763,6 @@
             "moduleName": "VeryAILiveness",
             "objc_name": "captureOutput:didOutputSampleBuffer:fromConnection:",
             "declAttributes": [
-              "Final",
               "ObjC",
               "Custom",
               "AccessControl",
@@ -4778,7 +4777,6 @@
         "moduleName": "VeryAILiveness",
         "declAttributes": [
           "Custom",
-          "Final",
           "AccessControl",
           "RawDocComment",
           "ObjC"
@@ -4863,6 +4861,13 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VeryAILiveness"
       },
       {
         "kind": "Import",
@@ -7007,22 +7012,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/AdjustmentHintView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3452,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/AdjustmentHintView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3215,
+      "offset": 3502,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/AdjustmentHintView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3385,
+      "offset": 3672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/AdjustmentHintView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3590,
+      "offset": 3718,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/AdjustmentHintView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3966,
       "length": 1,
       "value": "0"
     },
@@ -7120,98 +7139,98 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 902,
       "length": 22,
       "value": "\"camera.session.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "StringLiteral",
-      "offset": 982,
+      "offset": 976,
       "length": 20,
       "value": "\"camera.video.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1094,
+      "offset": 1088,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1166,
+      "offset": 1160,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1201,
+      "offset": 1195,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 1526,
+      "offset": 1520,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1867,
+      "offset": 1861,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2000,
+      "offset": 1994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2028,
+      "offset": 2022,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2343,
+      "offset": 2337,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2538,
+      "offset": 2532,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2665,
+      "offset": 2659,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "FloatLiteral",
-      "offset": 2786,
+      "offset": 2780,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/ui\/CameraPreviewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4031,
+      "offset": 4025,
       "length": 5,
       "value": "false"
     },
@@ -7715,42 +7734,42 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/ScanViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5007,
+      "offset": 5460,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/ScanViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5034,
+      "offset": 5487,
       "length": 6,
       "value": "\"dark\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/ScanViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5107,
+      "offset": 5560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/ScanViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5167,
+      "offset": 5620,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/ScanViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16616,
+      "offset": 17079,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/ScanViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 44462,
+      "offset": 44932,
       "length": 5,
       "value": "false"
     },
@@ -7771,14 +7790,28 @@
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3525,
+      "offset": 3922,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3984,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4285,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4014,
+      "offset": 4735,
       "length": 5,
       "value": "false"
     },
@@ -7788,6 +7821,13 @@
       "offset": 711,
       "length": 27,
       "value": "\"VeryAILiveness.LivenessCheckViewController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/vc\/LivenessCheckViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 24970,
+      "length": 26,
+      "value": "\"VeryAILiveness.LivenessTimeoutProgressBar\""
     },
     {
       "filePath": "\/Users\/runner\/work\/very-mobile-sdk\/very-mobile-sdk\/ios\/Classes\/utils\/InterFont.swift",
