@@ -438,7 +438,26 @@ SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 /// loop diagnostics + API request/response bodies to the host app’s
 /// console. Errors always log regardless of this flag.
 @property (nonatomic) BOOL debugLogging;
+/// When true, terminal errors (timeout, network/session failure,
+/// capture failure, etc.) route to an in-SDK error page with Retry
+/// / Close buttons instead of returning straight to the host
+/// completion. User cancel still exits immediately. Default off so
+/// existing integrators keep the original direct-callback behavior.
+/// Set via property assignment after init so adding the flag
+/// doesn’t break Obj-C call sites pinned to the older
+/// <code>initWithSdkKey:themeMode:language:livenessMode:debugLogging:</code>
+/// selector.
+@property (nonatomic) BOOL showError;
 - (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey themeMode:(NSString * _Nonnull)themeMode language:(NSString * _Nullable)language livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
+/// Convenience initializer for the common case where only the SDK
+/// key is provided. Every other field stays on its default
+/// (themeMode=“dark”, language=nil, livenessMode=.touch,
+/// debugLogging=false, showError=false). Tweak the resulting
+/// instance via property assignment if you need to override any of
+/// those. Exposed primarily for ObjC, where the designated
+/// <code>init(sdkKey:themeMode:language:livenessMode:debugLogging:)</code>
+/// selector requires every argument.
+- (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

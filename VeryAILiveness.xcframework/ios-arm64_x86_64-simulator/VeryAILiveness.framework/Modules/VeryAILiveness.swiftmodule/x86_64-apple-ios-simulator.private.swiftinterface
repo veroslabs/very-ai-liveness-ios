@@ -168,7 +168,9 @@ public struct CameraAdjustmentState {
   @objc public var language: Swift.String?
   @objc public var livenessMode: VeryLivenessMode
   @objc public var debugLogging: Swift.Bool
+  @objc public var showError: Swift.Bool
   @objc public init(sdkKey: Swift.String, themeMode: Swift.String = "dark", language: Swift.String? = nil, livenessMode: VeryLivenessMode = .touch, debugLogging: Swift.Bool = false)
+  @objc convenience public init(sdkKey: Swift.String)
   @objc deinit
 }
 extension VeryPresentationStyle : Swift.Equatable {}
