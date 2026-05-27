@@ -448,11 +448,20 @@ SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 /// <code>initWithSdkKey:themeMode:language:livenessMode:debugLogging:</code>
 /// selector.
 @property (nonatomic) BOOL showError;
+/// When true (the default), a successful liveness capture plays the
+/// finish animation + “Thanks for verifying” success page for ~1.5s
+/// before the host completion fires. Set false to skip the success
+/// page entirely and return to the host the instant capture
+/// succeeds. Set via property assignment after init so adding the
+/// flag doesn’t break Obj-C call sites pinned to the older
+/// <code>initWithSdkKey:themeMode:language:livenessMode:debugLogging:</code>
+/// selector.
+@property (nonatomic) BOOL showSuccess;
 - (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey themeMode:(NSString * _Nonnull)themeMode language:(NSString * _Nullable)language livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
 /// Convenience initializer for the common case where only the SDK
 /// key is provided. Every other field stays on its default
 /// (themeMode=“dark”, language=nil, livenessMode=.touch,
-/// debugLogging=false, showError=false). Tweak the resulting
+/// debugLogging=false, showError=false, showSuccess=true). Tweak the resulting
 /// instance via property assignment if you need to override any of
 /// those. Exposed primarily for ObjC, where the designated
 /// <code>init(sdkKey:themeMode:language:livenessMode:debugLogging:)</code>
