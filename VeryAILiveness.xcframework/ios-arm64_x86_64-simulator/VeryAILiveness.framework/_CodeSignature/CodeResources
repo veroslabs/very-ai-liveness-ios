@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/VeryAILiveness-Swift.h</key>
 		<data>
-		VdkEZmCgllMaYXNPsxHPzndX04Y=
+		mva3+EfGrXBr5tgWfAcSQvx5jOw=
 		</data>
 		<key>Images/auth-logo.png</key>
 		<data>
@@ -142,47 +142,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ukd59vpHL1mnLj3LLBsMCHVA688=
+		qgpz3QlRp6GDkEijsOsaysj3eU4=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		RSfQX+5Z4MGq+qKmjGTkk4Zec44=
+		hveDuXJYRrD3oV7agF+2PLd9A6s=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		eMBQEAHhsiasjMDBjKKI3y2JKHs=
+		IrdhmT1RxSr98Q6HAv0o/8kgF4s=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		F1nKsoY4B37aq3w5rOoWww3ITzs=
+		VdG8689/lftoXpixuf4ZljGMbfc=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eMBQEAHhsiasjMDBjKKI3y2JKHs=
+		IrdhmT1RxSr98Q6HAv0o/8kgF4s=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JhXpgSH3DKbuzcRTwareiG742k4=
+		luYbihmuLyaIaJ7f8O0pMfTxtIg=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		RSfQX+5Z4MGq+qKmjGTkk4Zec44=
+		hveDuXJYRrD3oV7agF+2PLd9A6s=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Pvk9nkLCmvRWU1qY6LLtxrjyUlA=
+		zdKI64anBCVXm91F8rhePruRAcQ=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		u1opsoP5gQb0/Zw6qoTc5RR9aHw=
+		gpeetySMrnna0uBKPPmH3hIypXk=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Pvk9nkLCmvRWU1qY6LLtxrjyUlA=
+		zdKI64anBCVXm91F8rhePruRAcQ=
 		</data>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vsbM9kGrNI8gQYfxYYjYBIeFXP0=
+		Kf7MFllP1p3YjnFMaBachNTJadA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -546,7 +546,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SZj6LMiD0EKFmt46QzXKkIDM758rJk0HxFN8KSDqeN4=
+			nt/FzPhmelvJAKN/WDqc80UJY3yBSeDJ0jlMJ7zM8hQ=
 			</data>
 		</dict>
 		<key>Images/auth-logo.png</key>
@@ -770,70 +770,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ukg2n/NioukpXV60McLRItGjqrlLsiZTEy6mWOTOmQg=
+			YZ9nQvAmX4Qmbds+uVa1gVvl4ghyFEaBhFDR6spCZ/8=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LQWKYC5ncjMPHl0igfrvVz+wVkbDNb7xK5o2WuMT5Cg=
+			w5X3q8fC2q4HwV/z2zYWG6wvGHWgCziT4nCFpNfl31w=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c3t5KWWhuq4qpr2LpTPmNKGKG0fop5D0hKhDvOHgVOo=
+			YdYjxgdbAuIt+Dt1kiZavAVvb5rWt6DvQfePz3xT9tQ=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LQWKYC5ncjMPHl0igfrvVz+wVkbDNb7xK5o2WuMT5Cg=
+			w5X3q8fC2q4HwV/z2zYWG6wvGHWgCziT4nCFpNfl31w=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BdF6IJ8y7+faYyNQx2To55z+3pWNol1WxZjGEK01DoU=
+			N37DFk/a6jJg/irFvLOCOJftxX4M1pmUnvDjVRuVgxA=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ukg2n/NioukpXV60McLRItGjqrlLsiZTEy6mWOTOmQg=
+			YZ9nQvAmX4Qmbds+uVa1gVvl4ghyFEaBhFDR6spCZ/8=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6T5RHKo7pgukGt1WsWZkCJxp42i6bQnjt8d6uu5yb5A=
+			UA3tDxEf5gf4lbHd7K/b+p4nI13WIttkPyJcqSd03UQ=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lzLOOEBgAr0Aqbe8FKXW/ZIEZf6Fujhc8g3X1B01bSA=
+			JHd9oMhpP5jHNw/F5iBNRMzlgIo0WI6oJMAnF46m9ow=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6T5RHKo7pgukGt1WsWZkCJxp42i6bQnjt8d6uu5yb5A=
+			UA3tDxEf5gf4lbHd7K/b+p4nI13WIttkPyJcqSd03UQ=
 			</data>
 		</dict>
 		<key>Modules/VeryAILiveness.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ynFpUS8B3ZogrF3BifGcBsyvCd3aFhK/8fnOu32R+qA=
+			amP8hISDJqjsi6W2HGrzL9nhlzybb5o5lvplHLmWmjQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

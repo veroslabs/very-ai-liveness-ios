@@ -323,6 +323,7 @@ SWIFT_CLASS("_TtC14VeryAILiveness17CameraPreviewView")
 
 
 
+
 @class UIViewController;
 @class VeryLivenessConfig;
 enum VeryPresentationStyle : NSInteger;
@@ -359,6 +360,13 @@ SWIFT_CLASS("_TtC14VeryAILiveness14VeryAILiveness")
 /// Side-effect: kicks off the encrypted PalmID model download so the
 /// first scan completes faster.
 + (BOOL)isSupported SWIFT_WARN_UNUSED_RESULT;
+/// Warm up the palm-scan model download ahead of <code>check()</code>.
+/// Fire-and-forget and safe to call from any thread; a no-op when the
+/// model is already bundled or cached. Call it as early as possible —
+/// e.g. at app launch, or in an App Clip’s entry point, where the cache
+/// starts cold on most invocations — so the download runs while the user
+/// is still on consent/instructions instead of blocking the scan page.
++ (void)prefetch;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -874,6 +882,7 @@ SWIFT_CLASS("_TtC14VeryAILiveness17CameraPreviewView")
 
 
 
+
 @class UIViewController;
 @class VeryLivenessConfig;
 enum VeryPresentationStyle : NSInteger;
@@ -910,6 +919,13 @@ SWIFT_CLASS("_TtC14VeryAILiveness14VeryAILiveness")
 /// Side-effect: kicks off the encrypted PalmID model download so the
 /// first scan completes faster.
 + (BOOL)isSupported SWIFT_WARN_UNUSED_RESULT;
+/// Warm up the palm-scan model download ahead of <code>check()</code>.
+/// Fire-and-forget and safe to call from any thread; a no-op when the
+/// model is already bundled or cached. Call it as early as possible —
+/// e.g. at app launch, or in an App Clip’s entry point, where the cache
+/// starts cold on most invocations — so the download runs while the user
+/// is still on consent/instructions instead of blocking the scan page.
++ (void)prefetch;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
