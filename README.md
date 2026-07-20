@@ -18,7 +18,7 @@ pod 'VeryAILiveness/Bundled'   # ships ~8 MB packed_data.bin in the framework
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.58")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.59")
 ```
 
 Two product names are exposed:
@@ -74,6 +74,9 @@ let config = VeryLivenessConfig(
     livenessMode: .touch,         // .touch (default) or .gesture
     debugLogging: true            // recommended during integration
 )
+config.privacyMessage = "We use your hand motion only for anti-bot verification."
+config.learnMoreText = NSLocalizedString("Learn more", comment: "Liveness disclosure link")
+config.learnMoreUrl = "https://example.com/privacy"
 
 VeryAILiveness.check(
     from: viewController,
@@ -98,7 +101,10 @@ VeryAILiveness.check(
 
 `VeryLivenessConfig` is a slim subset of the full SDK's `VeryConfig` —
 no `userId` because liveness binds no user identity, but `sdkKey` is
-required to authenticate the backend session calls.
+required to authenticate the backend session calls. Optional
+`privacyMessage`, `learnMoreText`, and `learnMoreUrl` properties add
+plain-text partner copy and a host-localized disclosure link to the scan page;
+non-HTTP(S) URLs are ignored.
 
 `VeryResult.code` is one of `"success"`, `"cancelled"`, or `"error"`.
 On non-success, `result.error` carries an SDK error code and

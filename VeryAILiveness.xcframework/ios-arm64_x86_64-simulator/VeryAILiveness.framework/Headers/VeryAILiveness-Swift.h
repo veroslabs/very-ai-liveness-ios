@@ -431,6 +431,7 @@ typedef SWIFT_ENUM(NSInteger, VeryErrorType, open) {
   VeryErrorTypeVerificationExhausted = 5004,
 };
 
+@class UIColor;
 
 /// Liveness-check configuration.
 /// Slim subset of <code>VeryConfig</code> — <code>userId</code> is not exposed because the
@@ -469,6 +470,26 @@ SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 /// <code>initWithSdkKey:themeMode:language:livenessMode:debugLogging:</code>
 /// selector.
 @property (nonatomic) BOOL showSuccess;
+/// Optional disclosure shown below the native scan instruction. The host
+/// owns localization and passes the final copy in directly. Basic HTML is
+/// supported: wrap a substring in <code><a href="https://…">…</a></code> to render an
+/// inline link. When the link carries a valid HTTP(S) URL the SDK opens it
+/// directly on tap; otherwise the text is shown with no tap handling.
+@property (nonatomic, copy) NSString * _Nullable privacyMessage;
+/// Font size, in points, for <code>privacyMessage</code>. <code>0</code> (the default) uses the
+/// SDK’s built-in disclosure size.
+@property (nonatomic) CGFloat privacyMessageFontSize;
+/// Optional colour for <code>privacyMessage</code>. <code>nil</code> (the default) uses the SDK’s
+/// muted on-scrim colour.
+@property (nonatomic, strong) UIColor * _Nullable privacyMessageColor;
+/// Maximum seconds the user has to complete the scan gesture before the flow
+/// times out (error 6107). <code>0</code> (the default) keeps the SDK’s built-in
+/// 10-second budget; raise it when testing so the window isn’t too short.
+/// Only the scan-gesture phase is affected — the network-setup phase keeps
+/// its own fixed budget. Set via property assignment after init so adding
+/// the field doesn’t break Obj-C call sites pinned to the older
+/// <code>initWithSdkKey:themeMode:language:livenessMode:debugLogging:</code> selector.
+@property (nonatomic) NSInteger scanTimeoutSeconds;
 - (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey themeMode:(NSString * _Nonnull)themeMode language:(NSString * _Nullable)language livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
 /// Convenience initializer for the common case where only the SDK
 /// key is provided. Every other field stays on its default
@@ -1016,6 +1037,7 @@ typedef SWIFT_ENUM(NSInteger, VeryErrorType, open) {
   VeryErrorTypeVerificationExhausted = 5004,
 };
 
+@class UIColor;
 
 /// Liveness-check configuration.
 /// Slim subset of <code>VeryConfig</code> — <code>userId</code> is not exposed because the
@@ -1054,6 +1076,26 @@ SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 /// <code>initWithSdkKey:themeMode:language:livenessMode:debugLogging:</code>
 /// selector.
 @property (nonatomic) BOOL showSuccess;
+/// Optional disclosure shown below the native scan instruction. The host
+/// owns localization and passes the final copy in directly. Basic HTML is
+/// supported: wrap a substring in <code><a href="https://…">…</a></code> to render an
+/// inline link. When the link carries a valid HTTP(S) URL the SDK opens it
+/// directly on tap; otherwise the text is shown with no tap handling.
+@property (nonatomic, copy) NSString * _Nullable privacyMessage;
+/// Font size, in points, for <code>privacyMessage</code>. <code>0</code> (the default) uses the
+/// SDK’s built-in disclosure size.
+@property (nonatomic) CGFloat privacyMessageFontSize;
+/// Optional colour for <code>privacyMessage</code>. <code>nil</code> (the default) uses the SDK’s
+/// muted on-scrim colour.
+@property (nonatomic, strong) UIColor * _Nullable privacyMessageColor;
+/// Maximum seconds the user has to complete the scan gesture before the flow
+/// times out (error 6107). <code>0</code> (the default) keeps the SDK’s built-in
+/// 10-second budget; raise it when testing so the window isn’t too short.
+/// Only the scan-gesture phase is affected — the network-setup phase keeps
+/// its own fixed budget. Set via property assignment after init so adding
+/// the field doesn’t break Obj-C call sites pinned to the older
+/// <code>initWithSdkKey:themeMode:language:livenessMode:debugLogging:</code> selector.
+@property (nonatomic) NSInteger scanTimeoutSeconds;
 - (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey themeMode:(NSString * _Nonnull)themeMode language:(NSString * _Nullable)language livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
 /// Convenience initializer for the common case where only the SDK
 /// key is provided. Every other field stays on its default
