@@ -56,33 +56,14 @@ Liveness uses the device camera and the on-device PalmID native
 library, neither of which work in the Simulator. Test on a physical
 device.
 
-## Usage
+## Quickstart
 
 ```swift
 import VeryAILiveness
 
-// Optional — kicks off the model prefetch and verifies camera/RAM.
-guard VeryAILiveness.isSupported() else {
-    // device unsupported, fall back
-    return
-}
+let config = VeryLivenessConfig(sdkKey: "your-sdk-key")
 
-let config = VeryLivenessConfig(
-    sdkKey: "your-sdk-key",       // required — issued by Very
-    themeMode: "dark",            // "light" or "dark"
-    language: "en",               // optional — ISO 639-1, defaults to system locale
-    livenessMode: .touch,         // .touch (default) or .gesture
-    debugLogging: true            // recommended during integration
-)
-config.privacyMessage = "We use your hand motion only for anti-bot verification."
-config.learnMoreText = NSLocalizedString("Learn more", comment: "Liveness disclosure link")
-config.learnMoreUrl = "https://example.com/privacy"
-
-VeryAILiveness.check(
-    from: viewController,
-    config: config,
-    presentationStyle: .modal     // .modal (default) or .push
-) { result in
+VeryAILiveness.check(from: viewController, config: config) { result in
     DispatchQueue.main.async {
         switch result.code {
         case "success":
@@ -99,42 +80,25 @@ VeryAILiveness.check(
 }
 ```
 
-`VeryLivenessConfig` is a slim subset of the full SDK's `VeryConfig` —
-no `userId` because liveness binds no user identity, but `sdkKey` is
-required to authenticate the backend session calls. Optional
-`privacyMessage`, `learnMoreText`, and `learnMoreUrl` properties add
-plain-text partner copy and a host-localized disclosure link to the scan page;
-non-HTTP(S) URLs are ignored.
+## Documentation
 
-`VeryResult.code` is one of `"success"`, `"cancelled"`, or `"error"`.
-On non-success, `result.error` carries an SDK error code and
-`result.errorMessage` carries a localized human-readable message.
+**https://very.org/docs/liveness-sdk/ios**
 
-## Asset loading
+The full guide is the single source of truth for everything beyond the
+snippet above:
 
-This distribution ships in **slim mode** by default — `packed_data.bin`
-(~8 MB) is downloaded from CDN on first scan and cached under
-`Application Support/`; subsequent launches use the cache. Plan for a
-loading state on the first scan (5–15 s on typical networks).
+- `VeryLivenessConfig` reference — theming, language, liveness mode,
+  and the success / error pages.
+- Privacy disclosure — the `privacyMessage` partner copy and its
+  inline `<a href>` link.
+- `VeryResult` codes and error handling.
+- Presentation styles.
+- Slim vs. bundled asset loading.
+- Network endpoints to allowlist.
 
-Use `pod 'VeryAILiveness/Bundled'` (CocoaPods) or
-`VeryAILivenessBundled` (SPM) to bundle the model in your binary
-instead — first scan is instant, app size grows by ~8 MB.
-
-## Network endpoints
-
-If your network restricts egress, allowlist the following:
-
-| Purpose | URL |
-|---|---|
-| Liveness session create | `https://api.very.org/v1/sdk/liveness-sessions` |
-| Liveness result POST | `https://api.very.org/v1/sdk/liveness-sessions/{id}/result` |
-| Model download (primary) | `https://assets.very.org/sdk/v3/packed_data.bin` |
-| Model download (backup) | `https://r2.assets.very.org/sdk/v3/packed_data.bin` |
-
-The result POST is fire-and-forget — it doesn't block the host
-completion. The model download path is unused in bundled mode after
-the first install.
+Docs track the latest release. If you are pinned to an older tag, treat
+this README's install coordinates as authoritative and the docs as
+describing a possibly newer API.
 
 ## Notes
 
