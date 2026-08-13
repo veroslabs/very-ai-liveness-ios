@@ -379,7 +379,12 @@ SWIFT_CLASS("_TtC14VeryAILiveness10VeryConfig")
 @property (nonatomic, copy) NSString * _Nullable userId;
 @property (nonatomic, copy) NSString * _Nullable language;
 @property (nonatomic, copy) NSString * _Nonnull themeMode;
-@property (nonatomic) enum VeryLivenessMode livenessMode;
+/// Ignored. The SDK picks the liveness mode itself: iOS always runs the
+/// touch points, and Android falls back to the gesture prompts on
+/// constrained setups (little RAM or a 32-bit process). Kept — along with
+/// the <code>livenessMode:</code> initializer argument, which is likewise ignored — so
+/// existing call sites keep compiling.
+@property (nonatomic) enum VeryLivenessMode livenessMode SWIFT_DEPRECATED_MSG("Ignored — the SDK picks the liveness mode itself.");
 /// Enable verbose SDK logging. Off by default — turning on will print API
 /// request/response bodies (containing session tokens, emails, etc.) to the
 /// host app’s console. Errors always log regardless of this flag.
@@ -397,7 +402,9 @@ SWIFT_CLASS("_TtC14VeryAILiveness10VeryConfig")
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable customStrings;
 /// Default initializer for Objective-C compatibility
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-/// Convenience initializer with all parameters
+/// Convenience initializer with all parameters. <code>livenessMode</code> is ignored
+/// (see the property) — it stays in the signature so the ObjC selector
+/// doesn’t change.
 - (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey userId:(NSString * _Nullable)userId language:(NSString * _Nullable)language themeMode:(NSString * _Nonnull)themeMode livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -475,7 +482,12 @@ SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 @property (nonatomic, copy) NSString * _Nonnull sdkKey;
 @property (nonatomic, copy) NSString * _Nonnull themeMode;
 @property (nonatomic, copy) NSString * _Nullable language;
-@property (nonatomic) enum VeryLivenessMode livenessMode;
+/// Ignored. The SDK picks the liveness mode itself: iOS always runs the
+/// touch points, and Android falls back to the gesture prompts on
+/// constrained setups (little RAM or a 32-bit process). Kept — along with
+/// the <code>livenessMode:</code> initializer argument, which is likewise ignored — so
+/// existing call sites keep compiling.
+@property (nonatomic) enum VeryLivenessMode livenessMode SWIFT_DEPRECATED_MSG("Ignored — the SDK picks the liveness mode itself.");
 /// Enable verbose SDK logging. Off by default — turning on prints scan
 /// loop diagnostics + API request/response bodies to the host app’s
 /// console. Errors always log regardless of this flag.
@@ -526,6 +538,8 @@ SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 /// unknown keys and blank values fall back to the localized default. Optional;
 /// set via property assignment after init.
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable customStrings;
+/// <code>livenessMode</code> is ignored (see the property) — it stays in the signature
+/// so the ObjC selector doesn’t change.
 - (nonnull instancetype)initWithSdkKey:(NSString * _Nonnull)sdkKey themeMode:(NSString * _Nonnull)themeMode language:(NSString * _Nullable)language livenessMode:(enum VeryLivenessMode)livenessMode debugLogging:(BOOL)debugLogging OBJC_DESIGNATED_INITIALIZER;
 /// Convenience initializer for the common case where only the SDK
 /// key is provided. Every other field stays on its default
@@ -540,11 +554,13 @@ SWIFT_CLASS("_TtC14VeryAILiveness18VeryLivenessConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Liveness detection mode for palm scanning
+/// Liveness detection mode for palm scanning. Raw values are the ints PalmID
+/// expects. The host does not choose: iOS always captures with <code>.touch</code>, and the
+/// gesture prompts exist only as an Android low-memory fallback.
 typedef SWIFT_ENUM(NSInteger, VeryLivenessMode, open) {
 /// Gesture-based liveness detection
   VeryLivenessModeGesture = 1,
-/// Touch-point-based liveness detection (default)
+/// Touch-point-based liveness detection
   VeryLivenessModeTouch = 4,
 };
 

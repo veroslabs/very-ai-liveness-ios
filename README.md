@@ -18,7 +18,7 @@ pod 'VeryAILiveness/Bundled'   # ships ~8 MB packed_data.bin in the framework
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.64")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.65")
 ```
 
 Two product names are exposed:
@@ -87,8 +87,8 @@ VeryAILiveness.check(from: viewController, config: config) { result in
 The full guide is the single source of truth for everything beyond the
 snippet above:
 
-- `VeryLivenessConfig` reference — theming, language, liveness mode,
-  and the success / error pages.
+- `VeryLivenessConfig` reference — theming, language, and the
+  success / error pages.
 - Privacy disclosure — the `privacyMessage` partner copy and its
   inline `<a href>` link.
 - `VeryResult` codes and error handling.
