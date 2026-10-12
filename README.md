@@ -82,7 +82,7 @@ VeryAILiveness.check(from: viewController, config: config) { result in
 
 ## Documentation
 
-**https://very.org/docs/liveness-sdk/ios**
+**<https://very.org/docs/liveness-sdk/ios>**
 
 The full guide is the single source of truth for everything beyond the
 snippet above:
