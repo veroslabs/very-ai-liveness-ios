@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = 'VeryAILiveness'
   s.version          = '1.0.65'
   s.summary          = 'Palm-biometric liveness check'
-  s.description      = 'Single-shot palm liveness check for iOS — no API calls.'
+  s.description      = 'Single-shot palm liveness check for iOS. Makes two backend calls (issue nonce on entry, record outcome on exit); no enrollment or verification.'
   s.homepage         = 'https://very.org'
   s.license          = { :type => 'Commercial', :file => 'LICENSE' }
   s.author           = { 'Veros Inc.' => 'mail@very.org' }
