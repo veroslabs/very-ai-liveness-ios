@@ -1,4 +1,10 @@
 framework module VeryAILiveness {
+  umbrella header "VeryAILiveness-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module VeryAILiveness.Swift {
   header "VeryAILiveness-Swift.h"
-  requires objc
 }

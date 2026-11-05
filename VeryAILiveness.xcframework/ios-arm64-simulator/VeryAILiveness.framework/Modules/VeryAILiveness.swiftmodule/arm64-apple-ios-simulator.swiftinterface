@@ -1,0 +1,131 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VeryAILiveness -package-name VeryAILiveness
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import AVFoundation
+import Accelerate
+import CoreGraphics
+import CoreImage
+import CoreText
+import CryptoKit
+import Foundation
+import ImageIO
+import Network
+import ObjectiveC
+import QuartzCore
+import Swift
+import UIKit
+@_exported import VeryAILiveness
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum VeryLivenessMode : Swift.Int {
+  case gesture = 1
+  case touch = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class VeryCustomString : ObjectiveC.NSObject {
+  @objc public static let showYourHand: Swift.String
+  @objc public static let showYourFirstHand: Swift.String
+  @objc public static let connectDots: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class VeryAILiveness : ObjectiveC.NSObject {
+  @objc public static func check(from viewController: UIKit.UIViewController, config: VeryLivenessConfig, presentationStyle: VeryLivenessPresentationStyle = .fullScreen, completion: @escaping (VeryLivenessResult) -> Swift.Void)
+  @objc public static func cancel()
+  @objc public static func isSupported() -> Swift.Bool
+  @objc public static func prefetch()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class VeryLivenessConfig : ObjectiveC.NSObject {
+  @objc final public let sdkKey: Swift.String
+  @objc public var themeMode: Swift.String
+  @objc public var language: Swift.String?
+  @available(*, deprecated, message: "Ignored — the SDK picks the liveness mode itself.")
+  @objc public var livenessMode: VeryLivenessMode
+  @objc public var debugLogging: Swift.Bool
+  @objc public var showError: Swift.Bool
+  @objc public var showSuccess: Swift.Bool
+  @objc public var privacyMessage: Swift.String?
+  @objc public var privacyMessageFontSize: CoreFoundation.CGFloat
+  @objc public var privacyMessageColor: UIKit.UIColor?
+  @objc public var customStrings: [Swift.String : Swift.String]?
+  @objc public var sessionProvider: ((VeryLivenessSessionRequest, @escaping (Foundation.Data?, (any Swift.Error)?) -> Swift.Void) -> Swift.Void)?
+  @objc public var multiPointTouch: Swift.Bool
+  @objc public init(sdkKey: Swift.String, themeMode: Swift.String = "dark", language: Swift.String? = nil, debugLogging: Swift.Bool = false)
+  @objc convenience public init(sdkKey: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class VeryLivenessResult : ObjectiveC.NSObject {
+  @objc final public let code: Swift.String
+  @objc final public let signedToken: Swift.String?
+  @objc final public let error: Swift.String?
+  @objc final public let errorMessage: Swift.String?
+  @objc final public var isSuccess: Swift.Bool {
+    @objc get
+  }
+  @objc final public var errorType: VeryLivenessErrorType {
+    @objc get
+  }
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum VeryLivenessErrorType : Swift.Int {
+  case noError = 0
+  case cameraPermissionDenied = 6101
+  case captureFailed = 6102
+  case userCanceled = 6104
+  case missingCameraUsageDescription = 6105
+  case modelLoadFailed = 6106
+  case livenessTimeout = 6107
+  case checkInProgress = 6109
+  case invalidSession = 5002
+  case invalidSdkKey = 5008
+  case noInternet = 6001
+  case timeout = 6002
+  case dnsError = 6003
+  case networkError = 6004
+  case tlsError = 6005
+  case serverError = 6006
+  case unknownError = 6999
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VeryLivenessPresentationStyle : Swift.Int {
+  case fullScreen = 0
+  case modal = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class VeryLivenessSessionRequest : ObjectiveC.NSObject {
+  @objc final public let mode: Swift.String
+  @objc final public let profile: Swift.String
+  @objc final public let touchPolicyVersion: Swift.String?
+  @objc public var body: [Swift.String : Any] {
+    @objc get
+  }
+  @objc deinit
+}
+extension VeryLivenessMode : Swift.Equatable {}
+extension VeryLivenessMode : Swift.Hashable {}
+extension VeryLivenessMode : Swift.RawRepresentable {}
+extension VeryLivenessErrorType : Swift.Equatable {}
+extension VeryLivenessErrorType : Swift.Hashable {}
+extension VeryLivenessErrorType : Swift.RawRepresentable {}
+extension VeryLivenessPresentationStyle : Swift.Equatable {}
+extension VeryLivenessPresentationStyle : Swift.Hashable {}
+extension VeryLivenessPresentationStyle : Swift.RawRepresentable {}

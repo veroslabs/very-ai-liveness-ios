@@ -1,27 +1,30 @@
 Pod::Spec.new do |s|
   s.name             = 'VeryAILiveness'
-  s.version          = '1.0.65'
+  s.version          = '1.1.0'
   s.summary          = 'Palm-biometric liveness check'
-  s.description      = 'Single-shot palm liveness check for iOS. Makes two backend calls (issue nonce on entry, record outcome on exit); no enrollment or verification.'
+  s.description      = 'Palm liveness check for iOS, evaluated by Very from evidence the device collects.'
   s.homepage         = 'https://very.org'
   s.license          = { :type => 'Commercial', :file => 'LICENSE' }
   s.author           = { 'Veros Inc.' => 'mail@very.org' }
-  s.source           = { :git => 'https://github.com/veroslabs/very-ai-liveness-ios.git', :tag => '1.0.65' }
+  s.source           = { :git => 'https://github.com/veroslabs/very-ai-liveness-ios.git', :tag => '1.1.0' }
   s.platform         = :ios, '13.0'
   s.swift_version    = '5.0'
 
-  s.default_subspecs = ['Core']  # slim by default — model downloads on first scan
+  s.default_subspecs = ['Core']
 
   s.subspec 'Core' do |core|
-    core.vendored_frameworks = 'VeryAILiveness.xcframework', 'PalmAPISaas.xcframework'
+    core.vendored_frameworks = 'VeryAILiveness.xcframework'
+    core.frameworks          = 'AVFoundation', 'UIKit', 'CoreImage'
+    core.libraries           = 'c++'
   end
 
+  # Kept so `pod 'VeryAILiveness/Bundled'` still resolves. It installs the
+  # same binary as Core: the SDK downloads its models on first use.
   s.subspec 'Bundled' do |b|
     b.dependency 'VeryAILiveness/Core'
-    # No source_files — same module-shadowing issue as VerySDK/Bundled.
-    # Must match the lookup hardcoded in BundleAccessor.swift
-    # ('VerySDK_BundledModel'); using a different name silently
-    # disables bundled mode.
-    b.resource_bundle = { 'VerySDK_BundledModel' => ['BundledModel/packed_data.bin'] }
   end
+
+  # The simulator slice is arm64 only (the linked LiteRT has no x86_64 one).
+  s.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
 end

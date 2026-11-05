@@ -1,60 +1,46 @@
 # VeryAILiveness — iOS distribution
 
 Prebuilt binary distribution of the VeryAILiveness palm-liveness SDK for iOS.
-Source code lives in [veroslabs/very-mobile-sdk](https://github.com/veroslabs/very-mobile-sdk).
 
-A liveness check opens a single-shot palm scan that confirms a live human
-palm. The flow makes two backend calls (issue nonce on entry, record
-outcome on exit) and produces a pass/fail `VeryResult` — no enrollment,
-no verification, no signed token.
+A check opens a palm scan, collects evidence on the device and submits it to
+Very, which decides. Your backend creates each liveness session — the server
+secret never ships in the app — and the SDK returns a `VeryLivenessResult` carrying
+Very's signed decision.
 
-## Install — CocoaPods (recommended)
+## Install — CocoaPods
 
 ```ruby
-pod 'VeryAILiveness'           # slim — model downloads on first scan (~5–15 s)
-pod 'VeryAILiveness/Bundled'   # ships ~8 MB packed_data.bin in the framework
+pod 'VeryAILiveness', '~> 1.1.0'
 ```
 
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.0.65")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.1.0")
 ```
 
-Two product names are exposed:
+Product: `VeryAILiveness`.
 
-- `VeryAILiveness` — slim (model downloads on first scan).
-- `VeryAILivenessBundled` — ships the model inside the framework.
+`pod 'VeryAILiveness/Bundled'` and the `VeryAILivenessBundled` product still
+resolve, to the same binary. The models (about 9.5 MB) are not in the framework:
+the SDK downloads them on first use, checks their SHA-256 and keeps them on the
+device. Call `VeryAILiveness.prefetch()` early (for example at app start) so the
+first scan does not wait for the download.
 
-## Install — Manual XCFramework
+## Install — manual XCFramework
 
-1. Drag both `VeryAILiveness.xcframework` and `PalmAPISaas.xcframework` into your Xcode project.
-2. **General → Frameworks, Libraries, and Embedded Content** — set both to **Embed & Sign**.
-3. **Build Settings → LD_RUNPATH_SEARCH_PATHS** — ensure `@executable_path/Frameworks` is present (default for new projects).
-4. Add the system frameworks the SDK depends on (CocoaPods / SPM auto-link these; manual integration must add them):
-   - `AVFoundation.framework`
-   - `CoreImage.framework`
-   - `CoreMedia.framework`
-   - `CoreVideo.framework`
-   - `CryptoKit.framework`
-   - `QuartzCore.framework`
-
-Manual integration is slim by default. For bundled mode, also drop
-`packed_data.bin` (shipped alongside the xcframeworks) into your app
-target's resources.
+1. Drag `VeryAILiveness.xcframework` into your Xcode project.
+2. **General → Frameworks, Libraries, and Embedded Content** — set it to **Embed & Sign**.
+3. Link `AVFoundation`, `CoreImage` and `libc++`.
+4. For the simulator, exclude `x86_64` (`EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64`).
 
 ## Project requirements
 
 | Setting | Value |
 |---|---|
 | Minimum deployment target | iOS 13.0 |
-| Swift language version | 5.0+ |
-| Enable Modules | Yes |
-| `Info.plist` | Add `NSCameraUsageDescription` |
-
-Liveness uses the device camera and the on-device PalmID native
-library, neither of which work in the Simulator. Test on a physical
-device.
+| `Info.plist` | `NSCameraUsageDescription` |
+| Simulator | arm64 only; the check needs a camera, so test on a device |
 
 ## Quickstart
 
@@ -62,45 +48,35 @@ device.
 import VeryAILiveness
 
 let config = VeryLivenessConfig(sdkKey: "your-sdk-key")
+config.sessionProvider = { request, completion in
+    // Your backend creates the session with Very (server secret) and returns
+    // the response body unchanged.
+    myBackend.createLivenessSession(request.body) { data, error in completion(data, error) }
+}
 
 VeryAILiveness.check(from: viewController, config: config) { result in
-    DispatchQueue.main.async {
-        switch result.code {
-        case "success":
-            // liveness passed
-            break
-        case "cancelled":
-            // user dismissed the page
-            break
-        default:
-            // result.error / result.errorMessage carry the failure detail
-            break
-        }
-    }
+    // result.isSuccess only when Very's signed decision passed;
+    // result.signedToken is the receipt for your backend.
 }
 ```
 
+## Upgrading from 1.0.x
+
+1.1.0 evaluates the check on Very's servers: your backend must create each
+session (`sessionProvider` is required, or every check fails with 5002) and
+verify `result.signedToken`. `scanTimeoutSeconds` is gone and
+`touchPolicyVersion` became `multiPointTouch`.
+`VeryResult` became `VeryLivenessResult` (`errorType` is a
+`VeryLivenessErrorType`), `VeryPresentationStyle` became
+`VeryLivenessPresentationStyle` (`.fullScreen`, `.modal`), and
+`sdkKey` is set only at initialization. Remove
+`PalmAPISaas.xcframework`. Details: `CHANGELOG.md`.
+
 ## Documentation
 
-**<https://very.org/docs/liveness-sdk/ios>**
+**https://very.org/docs/liveness-sdk/ios**
 
-The full guide is the single source of truth for everything beyond the
-snippet above:
+## Licenses
 
-- `VeryLivenessConfig` reference — theming, language, and the
-  success / error pages.
-- Privacy disclosure — the `privacyMessage` partner copy and its
-  inline `<a href>` link.
-- `VeryResult` codes and error handling.
-- Presentation styles.
-- Slim vs. bundled asset loading.
-- Network endpoints to allowlist.
-
-Docs track the latest release. If you are pinned to an older tag, treat
-this README's install coordinates as authoritative and the docs as
-describing a possibly newer API.
-
-## Notes
-
-- `VeryAILiveness.xcframework` depends on `PalmAPISaas.xcframework` at runtime. Both must be embedded — embedding only VeryAILiveness will crash with `dyld: Library not loaded: @rpath/PalmAPISaas.framework/PalmAPISaas`.
-- Both xcframeworks include simulator slices for development. The native palm library only runs on device, so production builds can strip the simulator slice from `PalmAPISaas` if app size matters.
+Proprietary — see `LICENSE`. Third-party components: `THIRD_PARTY_NOTICES.md`.
+Changes by version: `CHANGELOG.md`.
