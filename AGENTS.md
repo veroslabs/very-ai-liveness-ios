@@ -1,6 +1,6 @@
 # AGENTS.md — very-ai-liveness-ios
 
-Prebuilt binary distribution of the VeryAILiveness iOS SDK (v1.1.0).
+Prebuilt binary distribution of the VeryAILiveness iOS SDK (v1.1.1).
 CocoaPods trunk (`VeryAILiveness`) and this repository's tags (Swift Package
 Manager) are both canonical. Every release regenerates this repository except
 `.github/` and `.markdownlint.jsonc`, so an edit here does not survive the
@@ -13,15 +13,15 @@ next release; do not hand-edit the xcframework.
   first use and checks their SHA-256.
 - `Sources/VeryAILiveness/Exports.swift` — SPM wrapper target
   `VeryAILivenessWrapper` (`@_exported import VeryAILiveness`).
-- `Package.swift` — swift-tools 5.7. Products `VeryAILiveness` and
-  `VeryAILivenessBundled`, both the same binary.
+- `Package.swift` — swift-tools 5.7, iOS 13.0. Products
+  `VeryAILiveness` and `VeryAILivenessBundled`, both the same binary.
 - `VeryAILiveness.podspec` — subspecs `Core` (default) and `Bundled`, which
   only depends on `Core`.
 
 ## Release invariants
 
-- Each release is one commit on `main` plus the tag `<version>`; tags never move.
-- The version appears in the podspec `s.version` and `:tag`, the README's
+- Each release is one commit on `main` plus the tag `1.1.1`; tags never move.
+- `1.1.1` appears in the podspec `s.version` and `:tag`, the README's
   install lines and this file; a release updates all of them together.
 - `VeryAILivenessBundled` and `VeryAILiveness/Bundled` stay so existing
   manifests resolve.

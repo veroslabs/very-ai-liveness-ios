@@ -10,13 +10,13 @@ Very's signed decision.
 ## Install — CocoaPods
 
 ```ruby
-pod 'VeryAILiveness', '~> 1.1.0'
+pod 'VeryAILiveness', '~> 1.1.1'
 ```
 
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.1.0")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.1.1")
 ```
 
 Product: `VeryAILiveness`.

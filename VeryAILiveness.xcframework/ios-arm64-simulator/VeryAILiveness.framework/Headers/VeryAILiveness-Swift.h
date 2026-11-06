@@ -462,7 +462,7 @@ SWIFT_CLASS("_TtC14VeryAILiveness14VeryAILiveness")
 /// customizable.
 SWIFT_CLASS("_TtC14VeryAILiveness16VeryCustomString")
 @interface VeryCustomString : NSObject
-/// Scan-page default status (“Show your palm”).
+/// Scan-page default status (“Show your hand”).
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull showYourHand;)
 + (NSString * _Nonnull)showYourHand SWIFT_WARN_UNUSED_RESULT;
 /// Scan-page default status during first-time enrollment (“Show your first hand”).
