@@ -10,13 +10,18 @@ Very's signed decision.
 ## Install — CocoaPods
 
 ```ruby
-pod 'VeryAILiveness', '~> 1.1.1'
+pod 'VeryAILiveness', '~> 1.1.2', :source => 'https://github.com/veroslabs/very-cocoapods-specs.git'
 ```
+
+CocoaPods trunk accepts no new versions, so VeryAILiveness is published to
+its own spec repository. `:source` applies to this pod only: your other pods
+keep resolving from the sources your Podfile already lists. Without it,
+CocoaPods finds nothing newer than 1.1.1.
 
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.1.1")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.1.2")
 ```
 
 Product: `VeryAILiveness`.
@@ -32,7 +37,6 @@ first scan does not wait for the download.
 1. Drag `VeryAILiveness.xcframework` into your Xcode project.
 2. **General → Frameworks, Libraries, and Embedded Content** — set it to **Embed & Sign**.
 3. Link `AVFoundation`, `CoreImage` and `libc++`.
-4. For the simulator, exclude `x86_64` (`EXCLUDED_ARCHS[sdk=iphonesimulator*] = x86_64`).
 
 ## Project requirements
 
@@ -40,7 +44,7 @@ first scan does not wait for the download.
 |---|---|
 | Minimum deployment target | iOS 13.0 |
 | `Info.plist` | `NSCameraUsageDescription` |
-| Simulator | arm64 only; the check needs a camera, so test on a device |
+| Simulator | arm64 and x86_64. Your app builds and runs there, but `isSupported()` is `false` and `check` returns error 6102: the check needs a camera, so test it on a device |
 
 ## Quickstart
 

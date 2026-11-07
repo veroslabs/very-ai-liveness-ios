@@ -447,7 +447,8 @@ SWIFT_CLASS("_TtC14VeryAILiveness14VeryAILiveness")
 /// Fire-and-forget and safe to call from any thread; a no-op once they
 /// are loaded. The models (about 9.5 MB) are downloaded on first use and
 /// kept on the device, so calling this early moves that one-time download
-/// and the load off the scan page.
+/// and the load off the scan page. A no-op on the simulator, where
+/// <code>check()</code> returns 6102 without scanning.
 + (void)prefetch;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
