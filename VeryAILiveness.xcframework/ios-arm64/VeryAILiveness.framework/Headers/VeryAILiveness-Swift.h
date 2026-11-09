@@ -398,8 +398,9 @@ SWIFT_ENUM_FWD_DECL(NSInteger, VeryLivenessPresentationStyle)
 ///   </li>
 ///   <li>
 ///     <code>"rejected"</code> — Very’s signed decision did not pass. <code>signedToken</code> still
-///     carries the receipt; <code>error</code> keeps the local failure code (6102, or 6107
-///     when the capture budget ran out) for hosts that only read it.
+///     carries the receipt; <code>error</code> keeps the local failure code (6102; 6107
+///     when the capture budget ran out, 6110 when the camera stopped) for hosts
+///     that only read it.
 ///   </li>
 ///   <li>
 ///     <code>"cancelled"</code> — the user closed the page, or the host called <code>cancel()</code>
@@ -407,7 +408,10 @@ SWIFT_ENUM_FWD_DECL(NSInteger, VeryLivenessPresentationStyle)
 ///   </li>
 ///   <li>
 ///     <code>"error"</code> — the check could not run or complete: camera denied (6101),
-///     invalid session (5002), network (6004), a check already on screen (6109), …
+///     invalid session (5002), too many requests (5013), network (6004; 6006 for a
+///     server error; 6002 when setup outlasts its 30 s budget waiting on the
+///     session or Very’s receipt key), a check already on screen (6109), camera
+///     unavailable (6110), …
 ///   </li>
 /// </ul>
 /// One check runs at a time: a second <code>check()</code> while one is on screen
@@ -580,18 +584,24 @@ typedef SWIFT_ENUM(NSInteger, VeryLivenessErrorType, open) {
   VeryLivenessErrorTypeMissingCameraUsageDescription = 6105,
 /// The models could not be downloaded or loaded on this device (6106).
   VeryLivenessErrorTypeModelLoadFailed = 6106,
-/// The capture budget ran out before the person completed the check (6107).
+/// The capture budget ran out before the person completed the check, or
+/// setup timed out with nothing left to wait for on the network (6107).
   VeryLivenessErrorTypeLivenessTimeout = 6107,
 /// <code>check()</code> was called while a check was already on screen (6109).
   VeryLivenessErrorTypeCheckInProgress = 6109,
+/// Camera access is granted but the camera delivers no frames: another
+/// app holds it, a call interrupted it, or it failed (6110).
+  VeryLivenessErrorTypeCameraUnavailable = 6110,
 /// The liveness session is missing, malformed, or already used (5002),
 /// including a check started without a session provider.
   VeryLivenessErrorTypeInvalidSession = 5002,
 /// The SDK key is missing or not accepted (5008).
   VeryLivenessErrorTypeInvalidSdkKey = 5008,
+/// Very turned the request away as too many (HTTP 429); try again later (5013).
+  VeryLivenessErrorTypeRateLimited = 5013,
 /// No connection: offline, airplane mode, or Very unreachable (6001).
   VeryLivenessErrorTypeNoInternet = 6001,
-/// Very took too long to respond (6002).
+/// Very, or the host’s session provider, took too long to respond (6002).
   VeryLivenessErrorTypeTimeout = 6002,
 /// Very’s address could not be resolved: captive portal or DNS (6003).
   VeryLivenessErrorTypeDnsError = 6003,
@@ -632,8 +642,8 @@ typedef SWIFT_ENUM(NSInteger, VeryLivenessPresentationStyle, open) {
 ///   </li>
 ///   <li>
 ///     <code>"rejected"</code> — Very’s signed decision did not pass. <code>signedToken</code> still
-///     carries the receipt; <code>error</code> is 6102, or 6107 when the capture budget ran
-///     out first.
+///     carries the receipt; <code>error</code> is 6102, 6107 when the capture budget ran
+///     out first, or 6110 when the camera stopped mid-attempt.
 ///   </li>
 ///   <li>
 ///     <code>"cancelled"</code> — the user closed the page, or the host called <code>cancel()</code>

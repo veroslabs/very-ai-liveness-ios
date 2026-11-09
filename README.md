@@ -10,7 +10,7 @@ Very's signed decision.
 ## Install — CocoaPods
 
 ```ruby
-pod 'VeryAILiveness', '~> 1.1.2', :source => 'https://github.com/veroslabs/very-cocoapods-specs.git'
+pod 'VeryAILiveness', '~> 1.3.7', :source => 'https://github.com/veroslabs/very-cocoapods-specs.git'
 ```
 
 CocoaPods trunk accepts no new versions, so VeryAILiveness is published to
@@ -18,10 +18,33 @@ its own spec repository. `:source` applies to this pod only: your other pods
 keep resolving from the sources your Podfile already lists. Without it,
 CocoaPods finds nothing newer than 1.1.1.
 
+With Xcode 27 or later, CocoaPods gives the `VeryAILiveness` pod target this
+SDK's minimum, iOS 13.0, which Xcode 27 no longer builds. Raise the pod
+targets in your Podfile's `post_install` hook, then run `pod install` again.
+A Podfile takes one `post_install` hook: if yours already has one, put the
+loop inside it. `generated_projects` also covers the per-pod projects of
+`generate_multiple_pod_projects`.
+
+```ruby
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 15.0
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+        end
+      end
+    end
+  end
+end
+```
+
+Your app target itself must also be iOS 15 or later to build with Xcode 27.
+
 ## Install — Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.1.2")
+.package(url: "https://github.com/veroslabs/very-ai-liveness-ios.git", from: "1.3.7")
 ```
 
 Product: `VeryAILiveness`.

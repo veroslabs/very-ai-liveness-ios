@@ -1,6 +1,6 @@
 # AGENTS.md — very-ai-liveness-ios
 
-Prebuilt binary distribution of the VeryAILiveness iOS SDK (v1.1.2).
+Prebuilt binary distribution of the VeryAILiveness iOS SDK (v1.3.7).
 This repository's tags (Swift Package Manager) and the `VeryAILiveness`
 podspec in `veroslabs/very-cocoapods-specs` (CocoaPods; trunk up to 1.1.1) are both
 canonical. Every release regenerates this repository except
@@ -22,8 +22,8 @@ next release; do not hand-edit the xcframework.
 
 ## Release invariants
 
-- Each release is one commit on `main` plus the tag `1.1.2`; tags never move.
-- `1.1.2` appears in the podspec `s.version` and `:tag`, the README's
+- Each release is one commit on `main` plus the tag `1.3.7`; tags never move.
+- `1.3.7` appears in the podspec `s.version` and `:tag`, the README's
   install lines and this file; a release updates all of them together.
 - `VeryAILivenessBundled` and `VeryAILiveness/Bundled` stay so existing
   manifests resolve.

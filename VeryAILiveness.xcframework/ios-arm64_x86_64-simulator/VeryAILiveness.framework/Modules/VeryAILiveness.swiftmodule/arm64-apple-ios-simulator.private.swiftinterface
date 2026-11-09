@@ -87,8 +87,10 @@ import _SwiftConcurrencyShims
   case modelLoadFailed = 6106
   case livenessTimeout = 6107
   case checkInProgress = 6109
+  case cameraUnavailable = 6110
   case invalidSession = 5002
   case invalidSdkKey = 5008
+  case rateLimited = 5013
   case noInternet = 6001
   case timeout = 6002
   case dnsError = 6003
